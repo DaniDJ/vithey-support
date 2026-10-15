@@ -1,258 +1,122 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vithey – Politique de confidentialité</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.6;
-      max-width: 600px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      color: #333;
-    }
-    h1 { font-size: 1.5rem; margin-bottom: 1rem; }
-    h2 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.3rem; color: #111; }
-    p { margin: 0.5rem 0; }
-    ul { margin: 0.5rem 0; padding-left: 1.5rem; }
-    li { margin: 0.2rem 0; }
-    a { color: #007AFF; }
-    .updated { color: #888; font-size: 0.85rem; margin-bottom: 1.5rem; }
-
-    .lang-selector {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-bottom: 2rem;
-    }
-    .lang-btn {
-      padding: 0.3rem 0.8rem;
-      border: 1px solid #007AFF;
-      border-radius: 20px;
-      color: #007AFF;
-      cursor: pointer;
-      background: white;
-      font-size: 0.85rem;
-      font-family: inherit;
-    }
-    .lang-btn:hover { background: #e8f0ff; }
-    .lang-btn.active {
-      background: #007AFF;
-      color: white;
-    }
-    .lang-content { display: none; }
-    .lang-content.active { display: block; }
-  </style>
-</head>
-<body>
-
-  <h1>Vithey – Privacy Policy</h1>
-
-  <div class="lang-selector">
-    <button class="lang-btn active" onclick="showLang('fr', this)">Français</button>
-    <button class="lang-btn" onclick="showLang('en', this)">English</button>
-    <button class="lang-btn" onclick="showLang('it', this)">Italiano</button>
-    <button class="lang-btn" onclick="showLang('es', this)">Español</button>
-    <button class="lang-btn" onclick="showLang('pt', this)">Português</button>
-    <button class="lang-btn" onclick="showLang('de', this)">Deutsch</button>
-  </div>
-
-  <!-- FRANÇAIS -->
-  <div class="lang-content active" id="lang-fr">
-    <p class="updated">Dernière mise à jour : février 2026</p>
-    <h2>Introduction</h2>
-    <p>Vithey est une application de suivi de dépenses de voyage. Cette politique explique comment nous traitons vos données.</p>
-    <h2>Données collectées</h2>
-    <p>Vithey collecte uniquement les données que vous saisissez vous-même :</p>
-    <ul>
-      <li>Noms des voyageurs</li>
-      <li>Montants et devises des dépenses</li>
-      <li>Catégories et modes de paiement</li>
-      <li>Localisation géographique des dépenses</li>
-      <li>Photos de reçus et factures</li>
-      <li>Notes associées aux dépenses</li>
-    </ul>
-    <h2>Stockage des données</h2>
-    <p>Toutes vos données sont stockées localement sur votre appareil. Vithey contacte uniquement un serveur externe pour récupérer les taux de change en temps réel. Aucune donnée personnelle n'est transmise lors de cette opération.</p>
-    <h2>Localisation</h2>
-    <p>Vithey utilise votre position uniquement pour géolocaliser vos dépenses sur la carte. Cette donnée est stockée localement et n'est jamais partagée.</p>
-    <h2>Photos</h2>
-    <p>Les photos de reçus sont stockées localement sur votre appareil. Elles ne sont jamais transmises à des tiers.</p>
-    <h2>Partage des données</h2>
-    <p>Vithey ne partage aucune donnée personnelle avec des tiers. Nous ne vendons pas vos données. Nous n'affichons pas de publicité.</p>
-    <h2>Achats in-app</h2>
-    <p>Les achats Premium sont traités par Apple via l'App Store. Vithey ne collecte ni ne stocke vos informations de paiement.</p>
-    <h2>Vos droits</h2>
-    <p>Vous pouvez supprimer toutes vos données à tout moment en désinstallant l'application.</p>
-    <h2>Contact</h2>
-    <p><a href="mailto:mailokcool@gmail.com">mailokcool@gmail.com</a></p>
-  </div>
-
-  <!-- ENGLISH -->
-  <div class="lang-content" id="lang-en">
-    <p class="updated">Last updated: February 2026</p>
-    <h2>Introduction</h2>
-    <p>Vithey is a travel expense tracking app. This policy explains how we handle your data.</p>
-    <h2>Data collected</h2>
-    <p>Vithey only collects data you enter yourself:</p>
-    <ul>
-      <li>Traveler names</li>
-      <li>Expense amounts and currencies</li>
-      <li>Categories and payment methods</li>
-      <li>Geographic location of expenses</li>
-      <li>Receipt and invoice photos</li>
-      <li>Notes associated with expenses</li>
-    </ul>
-    <h2>Data storage</h2>
-    <p>All your data is stored locally on your device. Vithey only contacts an external server to retrieve real-time exchange rates. No personal data is transmitted during this operation.</p>
-    <h2>Location</h2>
-    <p>Vithey uses your location only to geolocate your expenses on the map. This data is stored locally and is never shared.</p>
-    <h2>Photos</h2>
-    <p>Receipt photos are stored locally on your device. They are never transmitted to third parties.</p>
-    <h2>Data sharing</h2>
-    <p>Vithey does not share any personal data with third parties. We do not sell your data. We do not display advertising.</p>
-    <h2>In-app purchases</h2>
-    <p>Premium purchases are processed by Apple via the App Store. Vithey does not collect or store your payment information.</p>
-    <h2>Your rights</h2>
-    <p>You can delete all your data at any time by uninstalling the app.</p>
-    <h2>Contact</h2>
-    <p><a href="mailto:mailokcool@gmail.com">mailokcool@gmail.com</a></p>
-  </div>
-
-  <!-- ITALIANO -->
-  <div class="lang-content" id="lang-it">
-    <p class="updated">Ultimo aggiornamento: febbraio 2026</p>
-    <h2>Introduzione</h2>
-    <p>Vithey è un'app per il monitoraggio delle spese di viaggio. Questa informativa spiega come trattiamo i vostri dati.</p>
-    <h2>Dati raccolti</h2>
-    <p>Vithey raccoglie solo i dati che inserite voi stessi:</p>
-    <ul>
-      <li>Nomi dei viaggiatori</li>
-      <li>Importi e valute delle spese</li>
-      <li>Categorie e metodi di pagamento</li>
-      <li>Posizione geografica delle spese</li>
-      <li>Foto di ricevute e fatture</li>
-      <li>Note associate alle spese</li>
-    </ul>
-    <h2>Archiviazione dei dati</h2>
-    <p>Tutti i vostri dati sono archiviati localmente sul vostro dispositivo. Vithey contatta solo un server esterno per recuperare i tassi di cambio in tempo reale. Nessun dato personale viene trasmesso durante questa operazione.</p>
-    <h2>Posizione</h2>
-    <p>Vithey utilizza la vostra posizione solo per geolocalizzare le spese sulla mappa. Questo dato è archiviato localmente e non viene mai condiviso.</p>
-    <h2>Foto</h2>
-    <p>Le foto delle ricevute sono archiviate localmente sul vostro dispositivo. Non vengono mai trasmesse a terzi.</p>
-    <h2>Condivisione dei dati</h2>
-    <p>Vithey non condivide alcun dato personale con terzi. Non vendiamo i vostri dati. Non mostriamo pubblicità.</p>
-    <h2>Acquisti in-app</h2>
-    <p>Gli acquisti Premium sono elaborati da Apple tramite l'App Store. Vithey non raccoglie né archivia le vostre informazioni di pagamento.</p>
-    <h2>I vostri diritti</h2>
-    <p>Potete eliminare tutti i vostri dati in qualsiasi momento disinstallando l'app.</p>
-    <h2>Contatto</h2>
-    <p><a href="mailto:mailokcool@gmail.com">mailokcool@gmail.com</a></p>
-  </div>
-
-  <!-- ESPAÑOL -->
-  <div class="lang-content" id="lang-es">
-    <p class="updated">Última actualización: febrero 2026</p>
-    <h2>Introducción</h2>
-    <p>Vithey es una aplicación de seguimiento de gastos de viaje. Esta política explica cómo tratamos tus datos.</p>
-    <h2>Datos recopilados</h2>
-    <p>Vithey solo recopila los datos que introduces tú mismo:</p>
-    <ul>
-      <li>Nombres de los viajeros</li>
-      <li>Importes y divisas de los gastos</li>
-      <li>Categorías y métodos de pago</li>
-      <li>Ubicación geográfica de los gastos</li>
-      <li>Fotos de recibos y facturas</li>
-      <li>Notas asociadas a los gastos</li>
-    </ul>
-    <h2>Almacenamiento de datos</h2>
-    <p>Todos tus datos se almacenan localmente en tu dispositivo. Vithey solo contacta un servidor externo para obtener los tipos de cambio en tiempo real. No se transmite ningún dato personal durante esta operación.</p>
-    <h2>Ubicación</h2>
-    <p>Vithey usa tu ubicación solo para geolocalizar tus gastos en el mapa. Este dato se almacena localmente y nunca se comparte.</p>
-    <h2>Fotos</h2>
-    <p>Las fotos de recibos se almacenan localmente en tu dispositivo. Nunca se transmiten a terceros.</p>
-    <h2>Compartir datos</h2>
-    <p>Vithey no comparte ningún dato personal con terceros. No vendemos tus datos. No mostramos publicidad.</p>
-    <h2>Compras in-app</h2>
-    <p>Las compras Premium son procesadas por Apple a través del App Store. Vithey no recopila ni almacena tu información de pago.</p>
-    <h2>Tus derechos</h2>
-    <p>Puedes eliminar todos tus datos en cualquier momento desinstalando la app.</p>
-    <h2>Contacto</h2>
-    <p><a href="mailto:mailokcool@gmail.com">mailokcool@gmail.com</a></p>
-  </div>
-
-  <!-- PORTUGUÊS -->
-  <div class="lang-content" id="lang-pt">
-    <p class="updated">Última atualização: fevereiro de 2026</p>
-    <h2>Introdução</h2>
-    <p>Vithey é uma aplicação de controlo de despesas de viagem. Esta política explica como tratamos os teus dados.</p>
-    <h2>Dados recolhidos</h2>
-    <p>Vithey recolhe apenas os dados que introduzes tu mesmo:</p>
-    <ul>
-      <li>Nomes dos viajantes</li>
-      <li>Valores e moedas das despesas</li>
-      <li>Categorias e métodos de pagamento</li>
-      <li>Localização geográfica das despesas</li>
-      <li>Fotos de recibos e faturas</li>
-      <li>Notas associadas às despesas</li>
-    </ul>
-    <h2>Armazenamento de dados</h2>
-    <p>Todos os teus dados são armazenados localmente no teu dispositivo. Vithey contacta apenas um servidor externo para obter as taxas de câmbio em tempo real. Nenhum dado pessoal é transmitido durante esta operação.</p>
-    <h2>Localização</h2>
-    <p>Vithey usa a tua localização apenas para geolocalizar as tuas despesas no mapa. Este dado é armazenado localmente e nunca é partilhado.</p>
-    <h2>Fotos</h2>
-    <p>As fotos de recibos são armazenadas localmente no teu dispositivo. Nunca são transmitidas a terceiros.</p>
-    <h2>Partilha de dados</h2>
-    <p>Vithey não partilha nenhum dado pessoal com terceiros. Não vendemos os teus dados. Não mostramos publicidade.</p>
-    <h2>Compras in-app</h2>
-    <p>As compras Premium são processadas pela Apple através da App Store. Vithey não recolhe nem armazena as tuas informações de pagamento.</p>
-    <h2>Os teus direitos</h2>
-    <p>Podes eliminar todos os teus dados a qualquer momento desinstalando a app.</p>
-    <h2>Contacto</h2>
-    <p><a href="mailto:mailokcool@gmail.com">mailokcool@gmail.com</a></p>
-  </div>
-
-  <!-- DEUTSCH -->
-  <div class="lang-content" id="lang-de">
-    <p class="updated">Letzte Aktualisierung: Februar 2026</p>
-    <h2>Einleitung</h2>
-    <p>Vithey ist eine App zur Verfolgung von Reiseausgaben. Diese Richtlinie erklärt, wie wir mit euren Daten umgehen.</p>
-    <h2>Erfasste Daten</h2>
-    <p>Vithey erfasst nur Daten, die ihr selbst eingebt:</p>
-    <ul>
-      <li>Namen der Reisenden</li>
-      <li>Beträge und Währungen der Ausgaben</li>
-      <li>Kategorien und Zahlungsmethoden</li>
-      <li>Geografischer Standort der Ausgaben</li>
-      <li>Fotos von Belegen und Rechnungen</li>
-      <li>Notizen zu den Ausgaben</li>
-    </ul>
-    <h2>Datenspeicherung</h2>
-    <p>Alle eure Daten werden lokal auf eurem Gerät gespeichert. Vithey kontaktiert nur einen externen Server, um Echtzeit-Wechselkurse abzurufen. Dabei werden keine persönlichen Daten übermittelt.</p>
-    <h2>Standort</h2>
-    <p>Vithey verwendet euren Standort nur, um eure Ausgaben auf der Karte zu geolokalisieren. Diese Daten werden lokal gespeichert und niemals weitergegeben.</p>
-    <h2>Fotos</h2>
-    <p>Belegfotos werden lokal auf eurem Gerät gespeichert. Sie werden niemals an Dritte übermittelt.</p>
-    <h2>Datenweitergabe</h2>
-    <p>Vithey gibt keine persönlichen Daten an Dritte weiter. Wir verkaufen eure Daten nicht. Wir zeigen keine Werbung an.</p>
-    <h2>In-App-Käufe</h2>
-    <p>Premium-Käufe werden von Apple über den App Store verarbeitet. Vithey erfasst oder speichert keine Zahlungsinformationen.</p>
-    <h2>Eure Rechte</h2>
-    <p>Ihr könnt alle eure Daten jederzeit löschen, indem ihr die App deinstalliert.</p>
-    <h2>Kontakt</h2>
-    <p><a href="mailto:mailokcool@gmail.com">mailokcool@gmail.com</a></p>
-  </div>
-
-  <script>
-    function showLang(lang, btn) {
-      document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
-      document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
-      document.getElementById('lang-' + lang).classList.add('active');
-      btn.classList.add('active');
-    }
-  </script>
-
-</body>
-</html>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vithey – Confidentialité / Privacy</title><style>:root{color-scheme:light dark}body{font:16px/1.55 -apple-system,system-ui,sans-serif;max-width:42rem;margin:0 auto;padding:1.5rem 1rem 4rem}h1{font-size:1.6rem;margin-top:3rem}h2{font-size:1.05rem;margin:1.4rem 0 .3rem}p{margin:.3rem 0}nav{margin:1rem 0 2rem}small{opacity:.7}a{color:#b45f00}</style></head><body><nav><a href="#fr">Français</a> · <a href="#en">English</a> · <a href="#it">Italiano</a> · <a href="#es">Español</a> · <a href="#pt-BR">Português (Brasil)</a> · <a href="#de">Deutsch</a></nav>
+<section id="fr" lang="fr"><h1>Politique de confidentialité de Vithey</h1><small>Dernière mise à jour : 15 octobre 2026</small>
+<h2>En bref</h2>
+<p>Vithey enregistre tes dépenses uniquement sur ton téléphone. Il n&#x27;y a ni compte, ni serveur qui reçoit ce que tu notes, ni publicité, ni outil de mesure d&#x27;audience.</p>
+<h2>Ce qui est enregistré, et où</h2>
+<p>Tes voyages, dépenses, recettes, catégories, budgets, lieux, photos de reçus et réglages sont stockés dans l&#x27;app, sur ton téléphone. Nous n&#x27;y avons pas accès. Si tu désinstalles l&#x27;app sans sauvegarde, ces données sont perdues.</p>
+<h2>Ce qui quitte ton téléphone</h2>
+<p>Taux de change : l&#x27;app télécharge régulièrement une liste de taux à une adresse fixe (notre relais, ou à défaut le service Frankfurter). La demande ne contient aucune donnée de toi : ni montant, ni libellé, ni identifiant. Ton adresse IP est visible de ce service, comme pour tout accès à Internet.</p>
+<p>Lieux : le nom d&#x27;un lieu que tu tapes est envoyé au service de localisation de ton téléphone (Apple ou Google) pour retrouver sa position. La carte affichée est celle du téléphone (Apple Plans ou Google Maps).</p>
+<p>Achat : l&#x27;achat du déblocage passe par l&#x27;App Store ou Google Play. Nous ne voyons ni ton moyen de paiement ni ton identité ; nous savons seulement, via la boutique, si l&#x27;achat existe.</p>
+<h2>Autorisations</h2>
+<p>Position, photos, appareil photo, notifications et Face ID / Touch ID ne sont demandés qu&#x27;au moment où tu en as besoin. Tu peux refuser : l&#x27;app reste utilisable.</p>
+<h2>Export et sauvegarde</h2>
+<p>Les fichiers d&#x27;export et de sauvegarde contiennent tes dépenses en clair, sans mot de passe. Tu choisis à qui tu les envoies.</p>
+<h2>Enfants</h2>
+<p>Vithey ne s&#x27;adresse pas spécialement aux enfants et ne collecte aucune donnée personnelle.</p>
+<h2>Tes droits</h2>
+<p>Comme nous ne détenons aucune donnée te concernant, il n&#x27;y a rien à nous demander d&#x27;accéder, de corriger ou d&#x27;effacer : tout se fait dans l&#x27;app, et la désinstallation supprime tout.</p>
+<h2>Changements et contact</h2>
+<p>Si cette politique change, la date ci-dessus sera mise à jour et l&#x27;app l&#x27;indiquera. Une question : <a href="mailto:mailokcool@gmail.com">mailokcool@gmail.com</a> · <a href="https://danidj.github.io/vithey-support/">https://danidj.github.io/vithey-support/</a></p>
+</section>
+<section id="en" lang="en"><h1>Vithey privacy policy</h1><small>Last updated: 15 October 2026</small>
+<h2>In short</h2>
+<p>Vithey stores your expenses only on your phone. There is no account, no server receiving what you enter, no advertising and no analytics.</p>
+<h2>What is stored, and where</h2>
+<p>Your trips, expenses, income, categories, budgets, places, receipt photos and settings are stored inside the app, on your phone. We have no access to them. If you uninstall the app without a backup, this data is lost.</p>
+<h2>What leaves your phone</h2>
+<p>Exchange rates: the app regularly downloads a list of rates from a fixed address (our relay, or the Frankfurter service as a fallback). The request contains nothing about you: no amount, no label, no identifier. Your IP address is visible to that service, as with any internet access.</p>
+<p>Places: the name of a place you type is sent to your phone&#x27;s location service (Apple or Google) to find its position. The map shown is the phone&#x27;s own (Apple Maps or Google Maps).</p>
+<p>Purchase: unlocking goes through the App Store or Google Play. We see neither your payment method nor your identity; the store only tells us whether the purchase exists.</p>
+<h2>Permissions</h2>
+<p>Location, photos, camera, notifications and Face ID / Touch ID are requested only when you need them. You can refuse: the app stays usable.</p>
+<h2>Export and backup</h2>
+<p>Export and backup files contain your expenses in clear text, with no password. You choose who you send them to.</p>
+<h2>Children</h2>
+<p>Vithey is not aimed at children and collects no personal data.</p>
+<h2>Your rights</h2>
+<p>Since we hold no data about you, there is nothing to ask us to access, correct or erase: everything is done in the app, and uninstalling removes it all.</p>
+<h2>Changes and contact</h2>
+<p>If this policy changes, the date above will be updated and the app will say so. Questions: <a href="mailto:mailokcool@gmail.com">mailokcool@gmail.com</a> · <a href="https://danidj.github.io/vithey-support/">https://danidj.github.io/vithey-support/</a></p>
+</section>
+<section id="it" lang="it"><h1>Informativa sulla privacy di Vithey</h1><small>Ultimo aggiornamento: 15 ottobre 2026</small>
+<h2>In breve</h2>
+<p>Vithey salva le tue spese solo sul tuo telefono. Non c&#x27;è alcun account, nessun server che riceve ciò che annoti, nessuna pubblicità e nessuno strumento di analisi.</p>
+<h2>Cosa viene salvato e dove</h2>
+<p>Viaggi, spese, entrate, categorie, budget, luoghi, foto degli scontrini e impostazioni sono salvati nell&#x27;app, sul tuo telefono. Noi non vi abbiamo accesso. Se disinstalli l&#x27;app senza un backup, questi dati vanno persi.</p>
+<h2>Cosa lascia il telefono</h2>
+<p>Tassi di cambio: l&#x27;app scarica regolarmente un elenco di tassi da un indirizzo fisso (il nostro relay o, in alternativa, il servizio Frankfurter). La richiesta non contiene nulla su di te: né importi, né descrizioni, né identificativi. Il tuo indirizzo IP è visibile a quel servizio, come per qualsiasi accesso a Internet.</p>
+<p>Luoghi: il nome di un luogo che digiti viene inviato al servizio di localizzazione del telefono (Apple o Google) per trovarne la posizione. La mappa mostrata è quella del telefono (Apple Mappe o Google Maps).</p>
+<p>Acquisto: lo sblocco passa dall&#x27;App Store o da Google Play. Non vediamo né il tuo metodo di pagamento né la tua identità; lo store ci dice solo se l&#x27;acquisto esiste.</p>
+<h2>Autorizzazioni</h2>
+<p>Posizione, foto, fotocamera, notifiche e Face ID / Touch ID vengono richiesti solo quando servono. Puoi rifiutare: l&#x27;app resta utilizzabile.</p>
+<h2>Esportazione e backup</h2>
+<p>I file di esportazione e di backup contengono le tue spese in chiaro, senza password. Scegli tu a chi inviarli.</p>
+<h2>Minori</h2>
+<p>Vithey non è rivolta in particolare ai minori e non raccoglie dati personali.</p>
+<h2>I tuoi diritti</h2>
+<p>Poiché non conserviamo alcun dato che ti riguarda, non c&#x27;è nulla da chiederci di consultare, correggere o cancellare: tutto si fa nell&#x27;app e la disinstallazione elimina tutto.</p>
+<h2>Modifiche e contatti</h2>
+<p>Se questa informativa cambia, la data qui sopra sarà aggiornata e l&#x27;app lo segnalerà. Domande: <a href="mailto:mailokcool@gmail.com">mailokcool@gmail.com</a> · <a href="https://danidj.github.io/vithey-support/">https://danidj.github.io/vithey-support/</a></p>
+</section>
+<section id="es" lang="es"><h1>Política de privacidad de Vithey</h1><small>Última actualización: 15 de octubre de 2026</small>
+<h2>En breve</h2>
+<p>Vithey guarda tus gastos solo en tu teléfono. No hay cuenta, ni servidor que reciba lo que anotas, ni publicidad, ni herramientas de analítica.</p>
+<h2>Qué se guarda y dónde</h2>
+<p>Tus viajes, gastos, ingresos, categorías, presupuestos, lugares, fotos de recibos y ajustes se guardan en la app, en tu teléfono. Nosotros no tenemos acceso. Si desinstalas la app sin copia de seguridad, estos datos se pierden.</p>
+<h2>Qué sale de tu teléfono</h2>
+<p>Tipos de cambio: la app descarga con regularidad una lista de tipos desde una dirección fija (nuestro relé o, en su defecto, el servicio Frankfurter). La solicitud no contiene nada tuyo: ni importe, ni descripción, ni identificador. Tu dirección IP es visible para ese servicio, como en cualquier acceso a Internet.</p>
+<p>Lugares: el nombre de un lugar que escribes se envía al servicio de localización del teléfono (Apple o Google) para encontrar su posición. El mapa mostrado es el del teléfono (Apple Mapas o Google Maps).</p>
+<p>Compra: el desbloqueo pasa por la App Store o Google Play. No vemos tu método de pago ni tu identidad; la tienda solo nos indica si la compra existe.</p>
+<h2>Permisos</h2>
+<p>La ubicación, las fotos, la cámara, las notificaciones y Face ID / Touch ID solo se piden cuando los necesitas. Puedes rechazarlos: la app sigue siendo utilizable.</p>
+<h2>Exportación y copia de seguridad</h2>
+<p>Los archivos de exportación y de copia contienen tus gastos en claro, sin contraseña. Tú eliges a quién los envías.</p>
+<h2>Menores</h2>
+<p>Vithey no está dirigida especialmente a menores y no recopila datos personales.</p>
+<h2>Tus derechos</h2>
+<p>Como no conservamos ningún dato sobre ti, no hay nada que pedirnos acceder, corregir o borrar: todo se hace en la app y al desinstalarla se elimina todo.</p>
+<h2>Cambios y contacto</h2>
+<p>Si esta política cambia, se actualizará la fecha de arriba y la app lo indicará. Preguntas: <a href="mailto:mailokcool@gmail.com">mailokcool@gmail.com</a> · <a href="https://danidj.github.io/vithey-support/">https://danidj.github.io/vithey-support/</a></p>
+</section>
+<section id="pt-BR" lang="pt-BR"><h1>Política de privacidade do Vithey</h1><small>Última atualização: 15 de outubro de 2026</small>
+<h2>Em resumo</h2>
+<p>O Vithey guarda suas despesas somente no seu celular. Não há conta, nem servidor que receba o que você anota, nem publicidade, nem ferramenta de análise de uso.</p>
+<h2>O que é guardado e onde</h2>
+<p>Suas viagens, despesas, receitas, categorias, orçamentos, locais, fotos de recibos e configurações ficam no app, no seu celular. Nós não temos acesso a eles. Se você desinstalar o app sem backup, esses dados são perdidos.</p>
+<h2>O que sai do seu celular</h2>
+<p>Taxas de câmbio: o app baixa regularmente uma lista de taxas de um endereço fixo (nosso relay ou, na falta dele, o serviço Frankfurter). A solicitação não contém nada sobre você: nem valor, nem descrição, nem identificador. Seu endereço IP é visível para esse serviço, como em qualquer acesso à internet.</p>
+<p>Locais: o nome de um local que você digita é enviado ao serviço de localização do celular (Apple ou Google) para encontrar a posição. O mapa exibido é o do celular (Apple Mapas ou Google Maps).</p>
+<p>Compra: o desbloqueio passa pela App Store ou pelo Google Play. Não vemos sua forma de pagamento nem sua identidade; a loja apenas informa se a compra existe.</p>
+<h2>Permissões</h2>
+<p>Localização, fotos, câmera, notificações e Face ID / Touch ID só são pedidos quando você precisa. Você pode recusar: o app continua utilizável.</p>
+<h2>Exportação e backup</h2>
+<p>Os arquivos de exportação e de backup contêm suas despesas em texto aberto, sem senha. Você escolhe para quem enviá-los.</p>
+<h2>Crianças</h2>
+<p>O Vithey não é voltado especialmente a crianças e não coleta dados pessoais.</p>
+<h2>Seus direitos</h2>
+<p>Como não guardamos nenhum dado sobre você, não há o que nos pedir para acessar, corrigir ou apagar: tudo se faz no app, e desinstalar remove tudo.</p>
+<h2>Mudanças e contato</h2>
+<p>Se esta política mudar, a data acima será atualizada e o app avisará. Dúvidas: <a href="mailto:mailokcool@gmail.com">mailokcool@gmail.com</a> · <a href="https://danidj.github.io/vithey-support/">https://danidj.github.io/vithey-support/</a></p>
+</section>
+<section id="de" lang="de"><h1>Datenschutzerklärung von Vithey</h1><small>Zuletzt aktualisiert: 15. Oktober 2026</small>
+<h2>Kurz gesagt</h2>
+<p>Vithey speichert deine Ausgaben nur auf deinem Telefon. Es gibt kein Konto, keinen Server, der empfängt, was du einträgst, keine Werbung und keine Nutzungsanalyse.</p>
+<h2>Was gespeichert wird und wo</h2>
+<p>Deine Reisen, Ausgaben, Einnahmen, Kategorien, Budgets, Orte, Belegfotos und Einstellungen werden in der App auf deinem Telefon gespeichert. Wir haben keinen Zugriff darauf. Wenn du die App ohne Sicherung deinstallierst, gehen diese Daten verloren.</p>
+<h2>Was dein Telefon verlässt</h2>
+<p>Wechselkurse: Die App lädt regelmäßig eine Kursliste von einer festen Adresse (unser Relay oder ersatzweise der Dienst Frankfurter). Die Anfrage enthält nichts von dir: keinen Betrag, keine Bezeichnung, keine Kennung. Deine IP-Adresse ist für diesen Dienst sichtbar, wie bei jedem Internetzugriff.</p>
+<p>Orte: Der Name eines Orts, den du eintippst, wird an den Ortungsdienst deines Telefons (Apple oder Google) gesendet, um die Position zu finden. Die angezeigte Karte ist die des Telefons (Apple Karten oder Google Maps).</p>
+<p>Kauf: Die Freischaltung läuft über den App Store oder Google Play. Wir sehen weder dein Zahlungsmittel noch deine Identität; der Store teilt uns nur mit, ob der Kauf existiert.</p>
+<h2>Berechtigungen</h2>
+<p>Standort, Fotos, Kamera, Mitteilungen und Face ID / Touch ID werden erst abgefragt, wenn du sie brauchst. Du kannst ablehnen: Die App bleibt nutzbar.</p>
+<h2>Export und Sicherung</h2>
+<p>Export- und Sicherungsdateien enthalten deine Ausgaben im Klartext, ohne Passwort. Du entscheidest, an wen du sie sendest.</p>
+<h2>Kinder</h2>
+<p>Vithey richtet sich nicht speziell an Kinder und erhebt keine personenbezogenen Daten.</p>
+<h2>Deine Rechte</h2>
+<p>Da wir keine Daten über dich speichern, gibt es nichts, wofür du Auskunft, Berichtigung oder Löschung verlangen müsstest: Alles geschieht in der App, und die Deinstallation entfernt alles.</p>
+<h2>Änderungen und Kontakt</h2>
+<p>Ändert sich diese Erklärung, wird das Datum oben angepasst und die App weist darauf hin. Fragen: <a href="mailto:mailokcool@gmail.com">mailokcool@gmail.com</a> · <a href="https://danidj.github.io/vithey-support/">https://danidj.github.io/vithey-support/</a></p>
+</section>
+</body></html>
