@@ -65,7 +65,7 @@ a:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:
     <p class="tag" data-t="tag">Le carnet de poche du voyageur</p>
     <p class="lead" data-t="lead">Tes dépenses de voyage et du quotidien, sur ton téléphone. Sans compte, sans publicité.</p>
     <div class="spaces"><span class="pill trip"><i></i><span data-t="trip">Voyage</span></span><span class="pill home"><i></i><span data-t="home">Maison</span></span></div>
-    <a class="store" href="https://apps.apple.com/app/id6759218602" data-t="store">Télécharger sur l'App Store</a>
+    <a class="store" id="store" href="https://apps.apple.com/fr/app/id6759218602" data-t="store">Télécharger sur l'App Store</a>
   </section>
 
   <section class="cards">
@@ -97,11 +97,13 @@ es:{tag:"El cuaderno de bolsillo del viajero",lead:"Tus gastos de viaje y del d�
 "pt-BR":{tag:"O caderno de bolso do viajante",lead:"Suas despesas de viagem e do dia a dia, no seu celular. Sem conta, sem anúncios.",trip:"Viagem",home:"Casa",store:"Baixar na App Store",guideT:"Guia de uso",guideP:"Todas as funções, passo a passo: entrada, moedas, orçamento, viagem em dupla, Casa.",read:"Ler o guia →",privT:"Política de privacidade",privP:"O que o Vithey faz, e não faz, com seus dados: tudo fica no seu celular.",read2:"Ler a política →",contact:"Para qualquer dúvida ou suporte:"},
 de:{tag:"Das Reisenotizbuch für die Tasche",lead:"Deine Reise- und Alltagsausgaben, auf deinem Telefon. Ohne Konto, ohne Werbung.",trip:"Reise",home:"Zuhause",store:"Laden im App Store",guideT:"Benutzerhandbuch",guideP:"Alle Funktionen, Schritt für Schritt: Eingabe, Währungen, Budget, Reise zu zweit, Zuhause.",read:"Handbuch lesen →",privT:"Datenschutzerklärung",privP:"Was Vithey mit deinen Daten tut, und was nicht: alles bleibt auf deinem Telefon.",read2:"Erklärung lesen →",contact:"Bei Fragen oder für Support:"}
 };
+var S={fr:"fr",en:"us",it:"it",es:"es","pt-BR":"br",de:"de"};
 var N=[["fr","Français"],["en","English"],["it","Italiano"],["es","Español"],["pt-BR","Português (Brasil)"],["de","Deutsch"]];
 function pick(){var l=(navigator.language||"fr").toLowerCase();if(l.indexOf("pt")===0)return"pt-BR";var p=l.slice(0,2);return L[p]?p:"fr"}
 function set(l){
   var d=L[l];document.documentElement.lang=l;
   document.querySelectorAll("[data-t]").forEach(function(e){e.textContent=d[e.getAttribute("data-t")]});
+  document.getElementById("store").href="https://apps.apple.com/"+S[l]+"/app/id6759218602";
   document.getElementById("guide").href="guide.html#"+l;
   document.getElementById("priv").href="privacy.html#"+l;
   var f=document.getElementById("langs");f.innerHTML="";
