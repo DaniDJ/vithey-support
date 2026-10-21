@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="apple-itunes-app" content="app-id=6759218602">
-<title>Vithey – Support</title>
-<meta name="description" content="Vithey : tes dépenses de voyage et du quotidien, sur ton téléphone. Guide d'utilisation, confidentialité et assistance.">
+<title>Muskadia – Support</title>
+<meta name="description" content="Muskadia : tes dépenses de voyage et du quotidien, sur ton téléphone. Guide d'utilisation, confidentialité et assistance.">
 <link rel="icon" href="favicon.png">
 <link rel="apple-touch-icon" href="icon.png">
 <style>
@@ -29,6 +29,7 @@ main{max-width:40rem;margin:0 auto;padding:3.5rem 1.25rem 3rem}
 .icon{width:112px;height:112px;border-radius:25%;box-shadow:var(--shadow);display:block;margin:0 auto 1.4rem}
 h1{font:700 3.2rem/1.05 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;letter-spacing:-.02em;margin:0}
 .tag{font:italic 1.2rem/1.4 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;color:var(--amber-t);margin:.5rem 0 0}
+.former{margin:.3rem 0 0;font-size:.9rem;color:var(--ink2)}
 .lead{color:var(--ink2);max-width:30rem;margin:1.1rem auto 0}
 .spaces{display:flex;gap:.5rem;justify-content:center;margin:1.4rem 0 0;flex-wrap:wrap}
 .pill{display:inline-flex;align-items:center;gap:.4rem;padding:.3rem .8rem;border-radius:999px;font-size:.9rem;font-weight:600}
@@ -61,8 +62,9 @@ a:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:
 <main>
   <section class="hero">
     <img class="icon" src="icon.png" alt="" width="112" height="112">
-    <h1>Vithey</h1>
+    <h1>Muskadia</h1>
     <p class="tag" data-t="tag">Le carnet de poche du voyageur</p>
+    <p class="former" data-t="former">Anciennement Vithey</p>
     <p class="lead" data-t="lead">Tes dépenses de voyage et du quotidien, sur ton téléphone. Sans compte, sans publicité.</p>
     <div class="spaces"><span class="pill trip"><i></i><span data-t="trip">Voyage</span></span><span class="pill home"><i></i><span data-t="home">Maison</span></span></div>
     <a class="store" id="store" href="https://apps.apple.com/fr/app/id6759218602" data-t="store">Télécharger sur l'App Store</a>
@@ -81,7 +83,7 @@ a:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:
     </a>
     <a class="card priv" id="priv" href="privacy.html#fr">
       <h2 data-t="privT">Politique de confidentialité</h2>
-      <p data-t="privP">Ce que Vithey fait, et ne fait pas, de tes données : tout reste sur ton téléphone.</p>
+      <p data-t="privP">Ce que Muskadia fait, et ne fait pas, de tes données : tout reste sur ton téléphone.</p>
       <span class="go" data-t="read2">Lire la politique →</span>
     </a>
   </section>
@@ -95,12 +97,12 @@ a:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:
 <script>
 (function(){
 var L={
-fr:{tag:"Le carnet de poche du voyageur",lead:"Tes dépenses de voyage et du quotidien, sur ton téléphone. Sans compte, sans publicité.",trip:"Voyage",home:"Maison",store:"Télécharger sur l'App Store",guideT:"Guide d'utilisation",guideP:"Toutes les fonctions, pas à pas : saisie, devises, budget, voyage à deux, Maison.",read:"Lire le guide →",privT:"Politique de confidentialité",privP:"Ce que Vithey fait, et ne fait pas, de tes données : tout reste sur ton téléphone.",read2:"Lire la politique →",contact:"Pour toute question ou assistance :",budgetT:"Le budget en images",budgetP:"Créer, modifier et suivre ton budget, pas à pas et en schémas, avec une FAQ.",budgetGo:"Voir le budget en images →"},
-en:{tag:"The traveller's pocket notebook",lead:"Your travel and everyday expenses, on your phone. No account, no ads.",trip:"Trip",home:"Home",store:"Download on the App Store",guideT:"User guide",guideP:"Every feature, step by step: entry, currencies, budget, trips for two, Home.",read:"Read the guide →",privT:"Privacy policy",privP:"What Vithey does, and does not do, with your data: everything stays on your phone.",read2:"Read the policy →",contact:"For any question or support:",budgetT:"Budget in pictures",budgetP:"Create, edit and follow your budget, step by step and with diagrams, plus an FAQ.",budgetGo:"See the budget in pictures →"},
-it:{tag:"Il taccuino tascabile del viaggiatore",lead:"Le tue spese di viaggio e di tutti i giorni, sul tuo telefono. Senza account, senza pubblicità.",trip:"Viaggio",home:"Casa",store:"Scarica dall'App Store",guideT:"Guida all'uso",guideP:"Tutte le funzioni, passo dopo passo: inserimento, valute, budget, viaggio in due, Casa.",read:"Leggi la guida →",privT:"Informativa sulla privacy",privP:"Cosa fa, e cosa non fa, Vithey con i tuoi dati: tutto resta sul tuo telefono.",read2:"Leggi l'informativa →",contact:"Per qualsiasi domanda o assistenza:",budgetT:"Il budget in immagini",budgetP:"Crea, modifica e segui il tuo budget, passo dopo passo e con schemi, più una FAQ.",budgetGo:"Vedi il budget in immagini →"},
-es:{tag:"El cuaderno de bolsillo del viajero",lead:"Tus gastos de viaje y del día a día, en tu teléfono. Sin cuenta, sin publicidad.",trip:"Viaje",home:"Casa",store:"Descargar en el App Store",guideT:"Guía de uso",guideP:"Todas las funciones, paso a paso: entrada, monedas, presupuesto, viaje de dos, Casa.",read:"Leer la guía →",privT:"Política de privacidad",privP:"Lo que Vithey hace, y no hace, con tus datos: todo se queda en tu teléfono.",read2:"Leer la política →",contact:"Para cualquier pregunta o asistencia:",budgetT:"El presupuesto en imágenes",budgetP:"Crea, modifica y sigue tu presupuesto, paso a paso y con esquemas, y una FAQ.",budgetGo:"Ver el presupuesto en imágenes →"},
-"pt-BR":{tag:"O caderno de bolso do viajante",lead:"Suas despesas de viagem e do dia a dia, no seu celular. Sem conta, sem anúncios.",trip:"Viagem",home:"Casa",store:"Baixar na App Store",guideT:"Guia de uso",guideP:"Todas as funções, passo a passo: entrada, moedas, orçamento, viagem em dupla, Casa.",read:"Ler o guia →",privT:"Política de privacidade",privP:"O que o Vithey faz, e não faz, com seus dados: tudo fica no seu celular.",read2:"Ler a política →",contact:"Para qualquer dúvida ou suporte:",budgetT:"O orçamento em imagens",budgetP:"Crie, edite e acompanhe seu orçamento, passo a passo e com esquemas, mais uma FAQ.",budgetGo:"Ver o orçamento em imagens →"},
-de:{tag:"Das Reisenotizbuch für die Tasche",lead:"Deine Reise- und Alltagsausgaben, auf deinem Telefon. Ohne Konto, ohne Werbung.",trip:"Reise",home:"Zuhause",store:"Laden im App Store",guideT:"Benutzerhandbuch",guideP:"Alle Funktionen, Schritt für Schritt: Eingabe, Währungen, Budget, Reise zu zweit, Zuhause.",read:"Handbuch lesen →",privT:"Datenschutzerklärung",privP:"Was Vithey mit deinen Daten tut, und was nicht: alles bleibt auf deinem Telefon.",read2:"Erklärung lesen →",contact:"Bei Fragen oder für Support:",budgetT:"Das Budget in Bildern",budgetP:"Erstelle, ändere und verfolge dein Budget, Schritt für Schritt und mit Schaubildern, plus FAQ.",budgetGo:"Das Budget in Bildern ansehen →"}
+fr:{former:"Anciennement Vithey",tag:"Le carnet de poche du voyageur",lead:"Tes dépenses de voyage et du quotidien, sur ton téléphone. Sans compte, sans publicité.",trip:"Voyage",home:"Maison",store:"Télécharger sur l'App Store",guideT:"Guide d'utilisation",guideP:"Toutes les fonctions, pas à pas : saisie, devises, budget, voyage à deux, Maison.",read:"Lire le guide →",privT:"Politique de confidentialité",privP:"Ce que Muskadia fait, et ne fait pas, de tes données : tout reste sur ton téléphone.",read2:"Lire la politique →",contact:"Pour toute question ou assistance :",budgetT:"Le budget en images",budgetP:"Créer, modifier et suivre ton budget, pas à pas et en schémas, avec une FAQ.",budgetGo:"Voir le budget en images →"},
+en:{former:"Formerly Vithey",tag:"The traveller's pocket notebook",lead:"Your travel and everyday expenses, on your phone. No account, no ads.",trip:"Trip",home:"Home",store:"Download on the App Store",guideT:"User guide",guideP:"Every feature, step by step: entry, currencies, budget, trips for two, Home.",read:"Read the guide →",privT:"Privacy policy",privP:"What Muskadia does, and does not do, with your data: everything stays on your phone.",read2:"Read the policy →",contact:"For any question or support:",budgetT:"Budget in pictures",budgetP:"Create, edit and follow your budget, step by step and with diagrams, plus an FAQ.",budgetGo:"See the budget in pictures →"},
+it:{former:"Già Vithey",tag:"Il taccuino tascabile del viaggiatore",lead:"Le tue spese di viaggio e di tutti i giorni, sul tuo telefono. Senza account, senza pubblicità.",trip:"Viaggio",home:"Casa",store:"Scarica dall'App Store",guideT:"Guida all'uso",guideP:"Tutte le funzioni, passo dopo passo: inserimento, valute, budget, viaggio in due, Casa.",read:"Leggi la guida →",privT:"Informativa sulla privacy",privP:"Cosa fa, e cosa non fa, Muskadia con i tuoi dati: tutto resta sul tuo telefono.",read2:"Leggi l'informativa →",contact:"Per qualsiasi domanda o assistenza:",budgetT:"Il budget in immagini",budgetP:"Crea, modifica e segui il tuo budget, passo dopo passo e con schemi, più una FAQ.",budgetGo:"Vedi il budget in immagini →"},
+es:{former:"Antes Vithey",tag:"El cuaderno de bolsillo del viajero",lead:"Tus gastos de viaje y del día a día, en tu teléfono. Sin cuenta, sin publicidad.",trip:"Viaje",home:"Casa",store:"Descargar en el App Store",guideT:"Guía de uso",guideP:"Todas las funciones, paso a paso: entrada, monedas, presupuesto, viaje de dos, Casa.",read:"Leer la guía →",privT:"Política de privacidad",privP:"Lo que Muskadia hace, y no hace, con tus datos: todo se queda en tu teléfono.",read2:"Leer la política →",contact:"Para cualquier pregunta o asistencia:",budgetT:"El presupuesto en imágenes",budgetP:"Crea, modifica y sigue tu presupuesto, paso a paso y con esquemas, y una FAQ.",budgetGo:"Ver el presupuesto en imágenes →"},
+"pt-BR":{former:"Antigo Vithey",tag:"O caderno de bolso do viajante",lead:"Suas despesas de viagem e do dia a dia, no seu celular. Sem conta, sem anúncios.",trip:"Viagem",home:"Casa",store:"Baixar na App Store",guideT:"Guia de uso",guideP:"Todas as funções, passo a passo: entrada, moedas, orçamento, viagem em dupla, Casa.",read:"Ler o guia →",privT:"Política de privacidade",privP:"O que o Muskadia faz, e não faz, com seus dados: tudo fica no seu celular.",read2:"Ler a política →",contact:"Para qualquer dúvida ou suporte:",budgetT:"O orçamento em imagens",budgetP:"Crie, edite e acompanhe seu orçamento, passo a passo e com esquemas, mais uma FAQ.",budgetGo:"Ver o orçamento em imagens →"},
+de:{former:"Früher Vithey",tag:"Das Reisenotizbuch für die Tasche",lead:"Deine Reise- und Alltagsausgaben, auf deinem Telefon. Ohne Konto, ohne Werbung.",trip:"Reise",home:"Zuhause",store:"Laden im App Store",guideT:"Benutzerhandbuch",guideP:"Alle Funktionen, Schritt für Schritt: Eingabe, Währungen, Budget, Reise zu zweit, Zuhause.",read:"Handbuch lesen →",privT:"Datenschutzerklärung",privP:"Was Muskadia mit deinen Daten tut, und was nicht: alles bleibt auf deinem Telefon.",read2:"Erklärung lesen →",contact:"Bei Fragen oder für Support:",budgetT:"Das Budget in Bildern",budgetP:"Erstelle, ändere und verfolge dein Budget, Schritt für Schritt und mit Schaubildern, plus FAQ.",budgetGo:"Das Budget in Bildern ansehen →"}
 };
 var S={fr:"fr",en:"us",it:"it",es:"es","pt-BR":"br",de:"de"};
 var N=[["fr","Français"],["en","English"],["it","Italiano"],["es","Español"],["pt-BR","Português (Brasil)"],["de","Deutsch"]];
