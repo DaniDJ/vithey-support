@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="apple-itunes-app" content="app-id=6759218602">
+<title>Vithey – O orçamento em imagens</title>
+<meta name="description" content="Criar, editar e acompanhar seu orçamento no Vithey, passo a passo e com esquemas: um mês, o ano inteiro, as subcategorias e as perguntas frequentes.">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+:root{
+  --paper:#F8F5EE;--page:#FFFDF8;--line:#E6DFCF;--ink:#1C2438;--ink2:#5C6578;
+  --amber:#F5A524;--amber-t:#8A5200;--amber-bg:#FDEFD0;
+  --teal:#1E9E86;--teal-t:#0F6B5A;--teal-bg:#D9F0EA;
+  --coral:#D9573F;--coral-bg:#FBE3DD;
+  --shadow:0 1px 2px rgba(28,36,56,.06),0 10px 28px rgba(28,36,56,.08);
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:#12151F;--page:#1B2030;--line:#2A3045;--ink:#F2EFE6;--ink2:#A3A9B8;
+  --amber:#F7B23E;--amber-t:#F7B23E;--amber-bg:#3A2D12;
+  --teal:#3DC4A9;--teal-t:#5FD6BE;--teal-bg:#12342E;
+  --coral:#F0836E;--coral-bg:#3B1E19;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.35);
+}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+main{max-width:42rem;margin:0 auto;padding:2rem 1.25rem 3rem}
+a{color:var(--amber-t)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:6px}
+.back{font-size:.95rem;margin:0 0 1.2rem}
+h1{font:700 2.5rem/1.1 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;letter-spacing:-.02em;margin:0 0 .6rem}
+h2{font:700 1.65rem/1.2 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;margin:3rem 0 .6rem;scroll-margin-top:1rem}
+h3{font-size:1.05rem;margin:1.6rem 0 .3rem}
+.lead{color:var(--ink2);font-size:1.1rem;margin:0 0 1.2rem}
+p{margin:.5rem 0}
+nav.toc{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.4rem 0 0}
+nav.toc a{padding:.4rem .85rem;border-radius:999px;background:var(--page);border:1px solid var(--line);text-decoration:none;font-size:.92rem;font-weight:600;color:var(--ink)}
+nav.toc a:hover{border-color:var(--amber)}
+.idea{margin:1.2rem 0;padding:1rem 1.15rem;border-radius:16px;background:var(--amber-bg);border:1px solid var(--line)}
+.idea b{color:var(--amber-t)}
+.idea p{margin:.25rem 0}
+.fig{margin:1.2rem 0;padding:1rem;border-radius:18px;background:var(--page);border:1px solid var(--line);box-shadow:var(--shadow)}
+.fig svg{display:block;width:100%;max-width:26rem;height:auto;margin:0 auto}
+.fig figcaption{margin:.7rem .2rem 0;font-size:.92rem;color:var(--ink2)}
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:1rem 0}
+ol.steps li{counter-increment:s;position:relative;padding:.1rem 0 .1rem 3rem;margin:.9rem 0;min-height:2.3rem}
+ol.steps li:before{content:counter(s);position:absolute;left:0;top:0;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--amber);color:#1C2438;font-weight:700;display:flex;align-items:center;justify-content:center}
+.tag{display:inline-block;padding:.05rem .55rem;border-radius:8px;background:var(--page);border:1px solid var(--line);font-weight:600;font-size:.95em;max-width:100%;white-space:normal}
+.legend{list-style:none;padding:0;margin:.8rem 0 0}
+.legend li{display:flex;gap:.7rem;align-items:flex-start;margin:.55rem 0}
+.n{flex:none;width:1.6rem;height:1.6rem;border-radius:50%;background:var(--amber);color:#1C2438;font-weight:700;font-size:.85rem;display:flex;align-items:center;justify-content:center;margin-top:.1rem}
+details{background:var(--page);border:1px solid var(--line);border-radius:14px;margin:.6rem 0;overflow:hidden}
+summary{cursor:pointer;padding:.9rem 1.1rem;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--amber-t);font-size:1.3rem;line-height:1}
+details[open] summary:after{content:"–"}
+details div{padding:0 1.1rem 1rem;color:var(--ink)}
+.compare{display:grid;gap:.8rem;margin:1rem 0}
+@media(min-width:34rem){.compare{grid-template-columns:1fr 1fr}}
+.compare>div{padding:1rem;border-radius:16px;border:1px solid var(--line);background:var(--page)}
+.compare h3{margin-top:0}
+footer{margin-top:3rem;padding-top:1.4rem;border-top:2px dashed var(--line);text-align:center;font-size:.92rem;color:var(--ink2)}
+footer a{color:var(--ink2)}
+/* Couleurs des schémas */
+.s-page{fill:var(--page)}.s-paper{fill:var(--paper)}.s-line{stroke:var(--line);fill:none}
+.s-amber{fill:var(--amber)}.s-amberbg{fill:var(--amber-bg)}.s-teal{fill:var(--teal)}.s-tealbg{fill:var(--teal-bg)}
+.s-coral{fill:var(--coral)}.s-coralbg{fill:var(--coral-bg)}
+.s-ink{fill:var(--ink)}.s-ink2{fill:var(--ink2)}.s-stroke{stroke:var(--ink2);fill:none}
+.s-arrow{stroke:var(--ink2);stroke-width:2;fill:none;marker-end:url(#ah)}
+svg text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+.t{font-size:13px}.tb{font-size:13px;font-weight:700}.ts{font-size:11px}.tm{font-size:15px;font-weight:700}
+</style>
+</head>
+<body>
+<main>
+<p class="back"><a href="index.html">&larr; Suporte Vithey</a> · <a href="guide.html#pt-BR">Guia completo</a></p>
+<p class="back"><a href="budget.html">Français</a> · <a href="budget-en.html">English</a> · <a href="budget-it.html">Italiano</a> · <a href="budget-es.html">Español</a> · <b>Português (Brasil)</b> · <a href="budget-de.html">Deutsch</a></p>
+
+<h1>O orçamento em imagens</h1>
+<p class="lead">Criar, editar, excluir e acompanhar seu orçamento: um mês, um ano, uma viagem. Frases curtas, esquemas e uma FAQ no final.</p>
+
+<nav class="toc" aria-label="Índice">
+  <a href="#principe">A ideia em 30 segundos</a>
+  <a href="#mois">Um mês</a>
+  <a href="#annee">O ano inteiro</a>
+  <a href="#modifier">Editar</a>
+  <a href="#supprimer">Excluir</a>
+  <a href="#sous">Subcategorias</a>
+  <a href="#suivre">Acompanhar</a>
+  <a href="#voyage">Uma viagem</a>
+  <a href="#faq">FAQ</a>
+</nav>
+
+<h2 id="principe">A ideia em 30 segundos</h2>
+<div class="idea">
+  <p><b>Um orçamento é uma lista de categorias, cada uma com um valor previsto.</b></p>
+  <p>Você preenche só as que lhe interessam. O Vithey soma sozinho: o <b>total</b> e, para a Casa, o <b>saldo previsto</b> (receitas previstas menos despesas previstas).</p>
+  <p>O orçamento da Casa <b>se renova todo mês</b>: você não precisa recomeçar. Só o altera quando sua situação muda.</p>
+</div>
+
+<figure class="fig">
+<svg viewBox="0 0 360 290" role="img" aria-labelledby="f1t f1d">
+<title id="f1t">Um orçamento é a soma das categorias</title>
+<desc id="f1d">Mercado 400 euros, Lazer 100 euros e Moradia 700 euros somam um total de 1.200 euros.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--ink2)"/></marker></defs>
+<g class="t"><rect x="30" y="10" width="300" height="42" rx="12" class="s-amberbg"/><text x="46" y="36" class="tb s-ink">Mercado</text><text x="314" y="36" text-anchor="end" class="s-ink">€ 400</text>
+<rect x="30" y="60" width="300" height="42" rx="12" class="s-amberbg"/><text x="46" y="86" class="tb s-ink">Lazer</text><text x="314" y="86" text-anchor="end" class="s-ink">€ 100</text>
+<rect x="30" y="110" width="300" height="42" rx="12" class="s-amberbg"/><text x="46" y="136" class="tb s-ink">Moradia</text><text x="314" y="136" text-anchor="end" class="s-ink">€ 700</text></g>
+<path d="M180 160 V196" class="s-arrow"/><text x="196" y="184" class="ts s-ink2">O Vithey soma</text>
+<rect x="30" y="204" width="300" height="74" rx="18" class="s-amber"/>
+<text x="180" y="232" text-anchor="middle" class="t" fill="#1C2438">Orçamento do mês</text>
+<text x="180" y="263" text-anchor="middle" font-size="26" font-weight="700" fill="#1C2438">€ 1.200</text>
+</svg>
+<figcaption>Você nunca digita o total: ele é calculado a partir das categorias.</figcaption>
+</figure>
+
+<h2 id="mois">Criar o orçamento de um mês</h2>
+<p>Para a <b>Casa</b>. (O orçamento de uma viagem tem uma seção própria mais abaixo.)</p>
+<ol class="steps">
+  <li>Abra a <b>Casa</b> e depois a aba <span class="tag">Orçamento</span>.</li>
+  <li>Toque em <span class="tag">Preparar um mês</span> para o mês seguinte, ou em <span class="tag">Editar o orçamento</span> para o mês atual.</li>
+  <li>Preencha o valor de cada categoria, primeiro as <b>despesas previstas</b> e depois as <b>receitas previstas</b>.</li>
+  <li>Toque em <span class="tag">Salvar</span> e escolha a partir de quando a mudança vale (veja «Editar»).</li>
+</ol>
+
+<figure class="fig">
+<svg viewBox="0 0 340 520" role="img" aria-labelledby="f2t f2d">
+<title id="f2t">A tela Preparar um mês, zona por zona</title>
+<desc id="f2d">Sete zonas numeradas: o mês, as despesas previstas, uma categoria, as receitas previstas, o saldo previsto, os alertas e o botão Salvar.</desc>
+<rect x="10" y="8" width="300" height="504" rx="30" class="s-paper" stroke="var(--line)" stroke-width="2"/>
+<rect x="24" y="22" width="272" height="476" rx="20" class="s-page"/>
+<text x="40" y="52" class="tm s-ink">Novembro 2026</text>
+<text x="40" y="88" class="tb s-ink">Despesas previstas</text><text x="280" y="88" text-anchor="end" class="tb s-ink">€ 1.200</text>
+<g><rect x="36" y="100" width="248" height="34" rx="10" class="s-amberbg"/><circle cx="54" cy="117" r="9" class="s-amber"/><text x="72" y="122" class="t s-ink">Mercado</text><rect x="202" y="106" width="74" height="22" rx="7" class="s-page" stroke="var(--line)"/><text x="268" y="122" text-anchor="end" class="t s-ink">400</text></g>
+<g><rect x="36" y="140" width="248" height="34" rx="10" class="s-amberbg"/><circle cx="54" cy="157" r="9" class="s-amber"/><text x="72" y="162" class="t s-ink">Assinaturas <tspan fill="var(--amber-t)" font-weight="700">*</tspan></text><text x="268" y="162" text-anchor="end" class="tb s-ink">€ 25 ⌄</text></g>
+<g><rect x="36" y="180" width="248" height="34" rx="10" class="s-amberbg"/><circle cx="54" cy="197" r="9" class="s-amber"/><text x="72" y="202" class="t s-ink">Moradia</text><rect x="202" y="186" width="74" height="22" rx="7" class="s-page" stroke="var(--line)"/><text x="268" y="202" text-anchor="end" class="t s-ink">700</text></g>
+<text x="40" y="248" class="tb s-ink">Receitas previstas</text><text x="280" y="248" text-anchor="end" class="tb s-ink">€ 2.800</text>
+<g><rect x="36" y="260" width="248" height="34" rx="10" class="s-tealbg"/><circle cx="54" cy="277" r="9" class="s-teal"/><text x="72" y="282" class="t s-ink">Salário</text><rect x="202" y="266" width="74" height="22" rx="7" class="s-page" stroke="var(--line)"/><text x="268" y="282" text-anchor="end" class="t s-ink">2.800</text></g>
+<rect x="36" y="312" width="248" height="52" rx="12" class="s-page" stroke="var(--line)"/><text x="50" y="334" class="ts s-ink2">SALDO PREVISTO</text><text x="50" y="354" class="tb s-ink">Superávit de € 1.600</text>
+<rect x="36" y="376" width="248" height="46" rx="12" class="s-page" stroke="var(--line)"/><text x="50" y="404" class="t s-ink">Alertas</text><rect x="234" y="388" width="38" height="22" rx="11" class="s-amber"/><circle cx="261" cy="399" r="8" fill="#fff"/>
+<rect x="36" y="438" width="248" height="42" rx="14" class="s-amber"/><text x="160" y="464" text-anchor="middle" class="tb" fill="#1C2438">Salvar Novembro 2026</text>
+<g font-weight="700" font-size="13" fill="#1C2438" text-anchor="middle">
+<circle cx="306" cy="44" r="13" class="s-amber"/><text x="306" y="49">1</text>
+<circle cx="306" cy="88" r="13" class="s-amber"/><text x="306" y="93">2</text>
+<circle cx="306" cy="150" r="13" class="s-amber"/><text x="306" y="155">3</text>
+<circle cx="306" cy="248" r="13" class="s-amber"/><text x="306" y="253">4</text>
+<circle cx="306" cy="338" r="13" class="s-amber"/><text x="306" y="343">5</text>
+<circle cx="306" cy="399" r="13" class="s-amber"/><text x="306" y="404">6</text>
+<circle cx="306" cy="459" r="13" class="s-amber"/><text x="306" y="464">7</text>
+</g>
+</svg>
+<figcaption>A tela «Preparar um mês»: os números são exemplos. Os números das zonas são explicados na lista abaixo.</figcaption>
+</figure>
+
+<ul class="legend">
+  <li><span class="n">1</span><span><b>O mês.</b> No alto, o mês que você está preparando.</span></li>
+  <li><span class="n">2</span><span><b>Despesas previstas.</b> O total de tudo o que você pretende gastar. Muda a cada valor digitado.</span></li>
+  <li><span class="n">3</span><span><b>As categorias.</b> Preencha as que importam, deixe as outras vazias. Um asterisco <b>*</b> e uma seta indicam uma categoria com subcategorias: toque nela para expandir.</span></li>
+  <li><span class="n">4</span><span><b>Receitas previstas.</b> O que você pretende receber (salário, auxílios, reembolsos…). Uma receita nunca é contada como despesa.</span></li>
+  <li><span class="n">5</span><span><b>Saldo previsto.</b> Receitas menos despesas, por extenso: «Superávit de…» ou «Déficit de…».</span></li>
+  <li><span class="n">6</span><span><b>Alertas.</b> Uma notificação quando você chega a 80 % e depois a 100 % de uma categoria ou do total. Ela fica no seu celular.</span></li>
+  <li><span class="n">7</span><span><b>Salvar.</b> Se algo mudou, o Vithey pergunta a partir de quando vale.</span></li>
+</ul>
+
+<h2 id="annee">Criar o orçamento do ano inteiro</h2>
+<div class="idea">
+  <p><b>O método mais simples:</b> prepare um mês «típico» por categorias e deixe-o se repetir. Depois, ajuste só os meses fora do comum.</p>
+</div>
+<ol class="steps">
+  <li>Em Casa &gt; Orçamento, visão <span class="tag">Ano</span>, toque em <span class="tag">Preparar meu ano</span>.</li>
+  <li>Toque no cartão <b>Montar por categorias</b>. Ele abre o mês atual, ou janeiro para outro ano.</li>
+  <li>Preencha suas categorias, depois <span class="tag">Salvar</span> e escolha <span class="tag">Este mês e todos os meses seguintes</span>. Todos os meses seguintes assumem este orçamento.</li>
+  <li>Para um mês à parte (agosto, dezembro…), toque no nome dele na grade: ele abre por categorias. Salve com <span class="tag">Só este mês</span>.</li>
+</ol>
+
+<figure class="fig">
+<svg viewBox="0 0 360 278" role="img" aria-labelledby="f3t f3d">
+<title id="f3t">Montar o ano em três tempos</title>
+<desc id="f3d">Um mês típico salvo para todos os meses seguintes, depois um ajuste só para dezembro.</desc>
+<text x="8" y="20" class="tb s-ink">1. Um mês típico, repetido</text>
+<rect x="8" y="30" width="46" height="46" rx="10" class="s-paper" stroke="var(--line)"/><text x="31" y="58" text-anchor="middle" class="t s-ink2">Out</text><rect x="63" y="30" width="46" height="46" rx="10" class="s-amber"/><text x="86" y="58" text-anchor="middle" class="t " fill="#1C2438">Nov</text><rect x="118" y="30" width="46" height="46" rx="10" class="s-amber"/><text x="141" y="58" text-anchor="middle" class="t " fill="#1C2438">Dez</text><rect x="173" y="30" width="46" height="46" rx="10" class="s-amber"/><text x="196" y="58" text-anchor="middle" class="t " fill="#1C2438">Jan</text><rect x="228" y="30" width="46" height="46" rx="10" class="s-amber"/><text x="251" y="58" text-anchor="middle" class="t " fill="#1C2438">Fev</text><rect x="283" y="30" width="46" height="46" rx="10" class="s-amber"/><text x="306" y="58" text-anchor="middle" class="t " fill="#1C2438">…</text>
+<text x="8" y="98" class="t s-ink">Todos os meses a partir de novembro</text><text x="8" y="116" class="t s-ink">assumem o mesmo orçamento.</text>
+<text x="8" y="159" class="tb s-ink">2. Dezembro custa mais</text>
+<rect x="8" y="169" width="46" height="46" rx="10" class="s-paper" stroke="var(--line)"/><text x="31" y="197" text-anchor="middle" class="t s-ink2">Out</text><rect x="63" y="169" width="46" height="46" rx="10" class="s-amber"/><text x="86" y="197" text-anchor="middle" class="t " fill="#1C2438">Nov</text><rect x="118" y="169" width="46" height="46" rx="10" class="s-coral"/><text x="141" y="197" text-anchor="middle" class="t " fill="#fff">Dez</text><rect x="173" y="169" width="46" height="46" rx="10" class="s-amber"/><text x="196" y="197" text-anchor="middle" class="t " fill="#1C2438">Jan</text><rect x="228" y="169" width="46" height="46" rx="10" class="s-amber"/><text x="251" y="197" text-anchor="middle" class="t " fill="#1C2438">Fev</text><rect x="283" y="169" width="46" height="46" rx="10" class="s-amber"/><text x="306" y="197" text-anchor="middle" class="t " fill="#1C2438">…</text>
+<text x="8" y="235" class="t s-ink">«Só este mês»: só dezembro muda; janeiro</text><text x="8" y="253" class="t s-ink">volta ao orçamento normal.</text>
+</svg>
+<figcaption>Laranja: o orçamento normal. Vermelho: um mês diferente. Cinza: um mês passado, que não muda.</figcaption>
+</figure>
+
+<p>Abaixo do cartão, a grade «Ou um total por mês» também permite informar um simples <b>total</b> para cada mês, sem passar pelas categorias. A seta <b>⌄</b> à direita de um mês copia os valores dele para os meses seguintes.</p>
+
+<h2 id="modifier">Editar um orçamento</h2>
+<p>Abra o mês desejado e altere os valores. Ao salvar, o Vithey pergunta a partir de quando a mudança vale:</p>
+
+<div class="compare">
+  <div>
+    <h3>Só este mês</h3>
+    <p>O mês seguinte mantém os valores de antes.</p>
+    <p><i>Exemplo: um novembro mais caro que o normal.</i></p>
+  </div>
+  <div>
+    <h3>Este mês e todos os meses seguintes</h3>
+    <p>Todos os meses seguintes assumem estes valores, mesmo os que você já tinha definido.</p>
+    <p><i>Exemplo: seu aluguel sobe de forma duradoura.</i></p>
+  </div>
+</div>
+
+<figure class="fig">
+<svg viewBox="0 0 360 295" role="img" aria-labelledby="f4t f4d">
+<title id="f4t">Só este mês, ou todos os meses seguintes</title>
+<desc id="f4d">Com só este mês, apenas novembro muda. Com todos os meses seguintes, novembro e todos os meses depois mudam.</desc>
+<text x="8" y="20" class="tb s-ink">Só este mês</text>
+<rect x="8" y="30" width="46" height="46" rx="10" class="s-paper" stroke="var(--line)"/><text x="31" y="58" text-anchor="middle" class="t s-ink2">Out</text><rect x="63" y="30" width="46" height="46" rx="10" class="s-coral"/><text x="86" y="58" text-anchor="middle" class="t " fill="#fff">Nov</text><rect x="118" y="30" width="46" height="46" rx="10" class="s-amberbg" stroke="var(--line)"/><text x="141" y="58" text-anchor="middle" class="t s-ink">Dez</text><rect x="173" y="30" width="46" height="46" rx="10" class="s-amberbg" stroke="var(--line)"/><text x="196" y="58" text-anchor="middle" class="t s-ink">Jan</text><rect x="228" y="30" width="46" height="46" rx="10" class="s-amberbg" stroke="var(--line)"/><text x="251" y="58" text-anchor="middle" class="t s-ink">Fev</text><rect x="283" y="30" width="46" height="46" rx="10" class="s-amberbg" stroke="var(--line)"/><text x="306" y="58" text-anchor="middle" class="t s-ink">…</text>
+<text x="8" y="98" class="ts s-ink2">Só novembro muda; os meses seguintes mantêm os</text><text x="8" y="113" class="ts s-ink2">valores antigos.</text>
+<text x="8" y="149" class="tb s-ink">Este mês e todos os meses seguintes</text>
+<rect x="8" y="159" width="46" height="46" rx="10" class="s-paper" stroke="var(--line)"/><text x="31" y="187" text-anchor="middle" class="t s-ink2">Out</text><rect x="63" y="159" width="46" height="46" rx="10" class="s-coral"/><text x="86" y="187" text-anchor="middle" class="t " fill="#fff">Nov</text><rect x="118" y="159" width="46" height="46" rx="10" class="s-coral"/><text x="141" y="187" text-anchor="middle" class="t " fill="#fff">Dez</text><rect x="173" y="159" width="46" height="46" rx="10" class="s-coral"/><text x="196" y="187" text-anchor="middle" class="t " fill="#fff">Jan</text><rect x="228" y="159" width="46" height="46" rx="10" class="s-coral"/><text x="251" y="187" text-anchor="middle" class="t " fill="#fff">Fev</text><rect x="283" y="159" width="46" height="46" rx="10" class="s-coral"/><text x="306" y="187" text-anchor="middle" class="t " fill="#fff">…</text>
+<text x="8" y="227" class="ts s-ink2">Novembro e todos os meses depois assumem os</text><text x="8" y="242" class="ts s-ink2">valores novos.</text><text x="8" y="260" class="ts s-ink2">Vermelho: o que muda. Cinza: o mês passado, nunca</text><text x="8" y="275" class="ts s-ink2">tocado.</text>
+</svg>
+<figcaption>Um mês passado nunca é tocado se você mesmo não o alterar.</figcaption>
+</figure>
+
+<h2 id="supprimer">Excluir um orçamento</h2>
+<h3>Retirar uma categoria</h3>
+<p>Esvazie o valor dela e salve escolhendo o alcance.</p>
+<h3>Encerrar o orçamento de um mês (Casa)</h3>
+<p>Esvazie <b>todas</b> as categorias de um lado (despesas ou receitas). Não há mais orçamento (ou receitas previstas) <b>a partir desse mês</b>. Os meses anteriores mantêm o seu.</p>
+<h3>Excluir o orçamento de uma viagem</h3>
+<p>Viagem &gt; <span class="tag">Orçamento</span> &gt; <span class="tag">Excluir o orçamento</span> e confirme.</p>
+<div class="idea"><p><b>Suas despesas nunca são excluídas.</b> Só desaparece o orçamento, ou seja, o que você tinha previsto.</p></div>
+
+<h2 id="sous">Detalhar uma categoria em subcategorias</h2>
+<p>Para saber <i>para onde</i> vai o dinheiro de uma categoria: «Assinaturas» em Free, Cloud, ChatGPT…</p>
+<ol class="steps">
+  <li>Em Ajustes &gt; Categorias, abra a categoria, toque em <span class="tag">Subcategorias</span> e adicione as suas.</li>
+  <li>No orçamento, a categoria leva um asterisco <b>*</b>. Toque nela: uma linha por subcategoria, mais <span class="tag">Sem detalhe</span>.</li>
+</ol>
+
+<figure class="fig">
+<svg viewBox="0 0 360 244" role="img" aria-labelledby="f5t f5d">
+<title id="f5t">O valor de uma categoria é a soma das suas linhas</title>
+<desc id="f5d">Assinaturas 25 euros é igual a Free 15 mais Cloud 5 mais Sem detalhe 5.</desc>
+<rect x="105" y="10" width="150" height="54" rx="14" class="s-amber"/>
+<text x="180" y="32" text-anchor="middle" class="t" fill="#1C2438">Assinaturas *</text><text x="180" y="54" text-anchor="middle" font-size="16" font-weight="700" fill="#1C2438">€ 25</text>
+<g class="s-stroke" stroke-width="2"><path d="M180 64 V84"/><path d="M62 84 H298"/><path d="M62 84 V104"/><path d="M180 84 V104"/><path d="M298 84 V104"/></g>
+<rect x="8" y="104" width="108" height="62" rx="14" class="s-amberbg"/><text x="62" y="130" text-anchor="middle" class="tb s-ink">Free</text><text x="62" y="152" text-anchor="middle" class="t s-ink">€ 15</text>
+<rect x="126" y="104" width="108" height="62" rx="14" class="s-amberbg"/><text x="180" y="130" text-anchor="middle" class="tb s-ink">Cloud</text><text x="180" y="152" text-anchor="middle" class="t s-ink">€ 5</text>
+<rect x="244" y="104" width="108" height="62" rx="14" class="s-paper" stroke="var(--line)"/><text x="298" y="130" text-anchor="middle" class="tb s-ink" font-size="12">Sem detalhe</text><text x="298" y="152" text-anchor="middle" class="t s-ink">€ 5</text>
+<text x="180" y="200" text-anchor="middle" class="tb s-ink">15 + 5 + 5 = € 25</text>
+<text x="180" text-anchor="middle" y="222" class="ts s-ink2">«Sem detalhe» guarda a parte não detalhada.</text>
+</svg>
+<figcaption>As subcategorias ficam em ordem alfabética, e o nome que você escreve não é traduzido.</figcaption>
+</figure>
+
+<h2 id="suivre">Acompanhar seu orçamento</h2>
+<p>Seu orçamento serve de referência: o Vithey compara o que você <b>previu</b> com o que você <b>realmente gastou</b>.</p>
+<ul class="legend">
+  <li><span class="n">▸</span><span><b>Casa &gt; Orçamento &gt; visão Ano.</b> Mês a mês: o orçamento, o real e o que sobra. Um mês estourado é sinalizado. Toque em um mês para abrir o detalhe.</span></li>
+  <li><span class="n">▸</span><span><b>Detalhe do mês.</b> O total das receitas, o total das despesas, o saldo real e todas as linhas lançadas. Cada categoria se lê «gasto / previsto».</span></li>
+  <li><span class="n">▸</span><span><b>Estatísticas.</b> A distribuição das suas despesas por categoria, com as subcategorias expansíveis.</span></li>
+</ul>
+
+<figure class="fig">
+<svg viewBox="0 0 360 250" role="img" aria-labelledby="f6t f6d">
+<title id="f6t">Ler uma linha do Detalhe do mês</title>
+<desc id="f6d">Mercado: 450 euros gastos de 400 previstos, barra cheia, estourou em 50 euros. Lazer: 60 euros de 100, 60 por cento usado.</desc>
+<rect x="8" y="8" width="344" height="110" rx="16" class="s-paper" stroke="var(--line)"/>
+<circle cx="34" cy="36" r="12" class="s-amber"/><text x="54" y="41" class="tb s-ink">Mercado</text><text x="336" y="41" text-anchor="end" class="t s-ink">€ 450 / € 400</text>
+<rect x="24" y="62" width="312" height="10" rx="5" class="s-coral"/>
+<text x="24" y="98" class="t" fill="var(--coral)">Estourou em € 50,00</text>
+<rect x="8" y="130" width="344" height="110" rx="16" class="s-paper" stroke="var(--line)"/>
+<circle cx="34" cy="158" r="12" class="s-amber"/><text x="54" y="163" class="tb s-ink">Lazer</text><text x="336" y="163" text-anchor="end" class="t s-ink">€ 60 / € 100</text>
+<rect x="24" y="184" width="312" height="10" rx="5" class="s-line" stroke-width="1"/><rect x="24" y="184" width="187" height="10" rx="5" class="s-teal"/>
+<text x="24" y="220" class="t s-ink2">60% usado · restam € 40,00</text>
+</svg>
+<figcaption><b>€ 450 / € 400</b> se lê «gasto / previsto». A barra enche e fica vermelha além do orçamento. Verde: você está dentro do orçamento. As receitas se leem «recebido / previsto».</figcaption>
+</figure>
+
+<h2 id="voyage">O orçamento de uma viagem</h2>
+<p>Mesmo princípio, mais simples: um único orçamento para toda a viagem, sem meses.</p>
+<ol class="steps">
+  <li>Abra a viagem, aba <span class="tag">Orçamento</span>, depois <span class="tag">Definir um orçamento</span> (ou <span class="tag">Editar o orçamento</span>).</li>
+  <li>Informe o valor previsto de cada categoria. O total aparece, com o valor <b>por dia</b> se a viagem tiver datas.</li>
+  <li>Escolha se quer os <b>alertas</b> e toque em <span class="tag">Salvar o orçamento</span>.</li>
+</ol>
+<p>A aba Orçamento mostra depois, para o total e para cada categoria, a porcentagem usada, o que sobra ou o estouro. O orçamento é calculado na moeda de exibição da viagem.</p>
+
+<h2 id="faq">Perguntas frequentes</h2>
+
+<details><summary>Como acompanho meu orçamento?</summary><div>
+<p>Para a Casa: aba <b>Orçamento</b> &gt; visão <b>Ano</b> para ver cada mês, depois toque em um mês para o seu <b>detalhe</b> (real contra previsto, categoria por categoria). Para uma viagem: a aba <b>Orçamento</b> da viagem. As <b>Estatísticas</b> mostram a distribuição das suas despesas.</p>
+</div></details>
+
+<details><summary>Preciso preencher todas as categorias?</summary><div>
+<p>Não. Preencha só as que lhe interessam. Uma categoria sem valor simplesmente não tem orçamento.</p>
+</div></details>
+
+<details><summary>Para que serve «Sem detalhe»?</summary><div>
+<p>É a parte de uma categoria que você não detalha em subcategorias. Por exemplo, Assinaturas € 25, sendo Free € 15: os € 10 restantes são «Sem detalhe». Nas listas de despesas, também são as despesas lançadas sem subcategoria.</p>
+</div></details>
+
+<details><summary>Por que meu total aumentou quando preenchi uma subcategoria?</summary><div>
+<p>Porque o valor de uma categoria é a <b>soma das suas linhas</b>. Se o seu orçamento já existia, o valor dele está inteiro em «Sem detalhe». Para dividi-lo sem mudar o total, <b>reduza «Sem detalhe»</b> na mesma medida em que acrescenta às subcategorias.</p>
+</div></details>
+
+<details><summary>O que significa o asterisco (*)?</summary><div>
+<p>A categoria tem subcategorias. Toque nela para expandir.</p>
+</div></details>
+
+<details><summary>O que significa «Previsto, sem detalhe»?</summary><div>
+<p>É a parte de um orçamento antigo lançado antes das categorias: conta no total, mas não está ligada a nenhuma categoria. Você pode dividi-la abrindo o mês com «Preparar este mês».</p>
+</div></details>
+
+<details><summary>Qual é a diferença entre «só este mês» e «todos os meses seguintes»?</summary><div>
+<p>«Só este mês» altera apenas o mês aberto: o seguinte mantém seus valores. «Todos os meses seguintes» altera este mês e todos os depois, mesmo os já definidos. Os meses passados nunca se mexem.</p>
+</div></details>
+
+<details><summary>O que acontece quando estouro meu orçamento?</summary><div>
+<p>Nada é bloqueado: você pode continuar lançando. A barra fica vermelha, a linha diz «Estourou em…» e, se os alertas estiverem ativos, uma notificação avisou você aos 80 % e depois aos 100 %.</p>
+</div></details>
+
+<details><summary>Como funcionam os alertas?</summary><div>
+<p>Uma notificação aos 80 % e depois aos 100 % do orçamento, para o total e para cada categoria, uma só vez por limite. Elas são criadas no seu celular, nada passa pela internet. Se você recusar as notificações, o acompanhamento continua visível no app. Os alertas se ajustam no fim da tela do orçamento.</p>
+</div></details>
+
+<details><summary>Errei: como desfaço?</summary><div>
+<p>Reabra o mês, coloque os valores certos e salve. Para recuperar o orçamento anterior em todos os meses, escolha «Este mês e todos os meses seguintes». Suas despesas nunca são tocadas.</p>
+</div></details>
+
+<details><summary>Meu orçamento pode ficar em várias moedas?</summary><div>
+<p>O orçamento fica em uma única moeda: a de exibição da Casa ou da viagem. Uma despesa em moeda estrangeira é convertida pela cotação do dia do lançamento e depois contada no orçamento.</p>
+</div></details>
+
+<details><summary>Como recupero meu orçamento se eu trocar de celular?</summary><div>
+<p>Em Ajustes &gt; Exportação, crie um <b>backup</b>: ele também contém seus orçamentos e subcategorias. Restaure-o no celular novo.</p>
+</div></details>
+
+<details><summary>Uma receita conta nas minhas despesas?</summary><div>
+<p>Nunca. As receitas (salário, auxílios, reembolsos) servem só para o saldo: receitas menos despesas.</p>
+</div></details>
+
+<footer>
+  <p>Uma pergunta que não está aqui? <a href="mailto:mailokcool@gmail.com">Escreva para nós</a>.</p>
+  <p><a href="index.html">Suporte</a> · <a href="guide.html#pt-BR">Guia completo</a> · <a href="privacy.html#pt-BR">Privacidade</a></p>
+</footer>
+</main>
+</body>
+</html>

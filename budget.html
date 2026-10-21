@@ -46,7 +46,7 @@ nav.toc a:hover{border-color:var(--amber)}
 ol.steps{list-style:none;counter-reset:s;padding:0;margin:1rem 0}
 ol.steps li{counter-increment:s;position:relative;padding:.1rem 0 .1rem 3rem;margin:.9rem 0;min-height:2.3rem}
 ol.steps li:before{content:counter(s);position:absolute;left:0;top:0;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--amber);color:#1C2438;font-weight:700;display:flex;align-items:center;justify-content:center}
-.tag{display:inline-block;padding:.05rem .55rem;border-radius:8px;background:var(--page);border:1px solid var(--line);font-weight:600;font-size:.95em;white-space:nowrap}
+.tag{display:inline-block;padding:.05rem .55rem;border-radius:8px;background:var(--page);border:1px solid var(--line);font-weight:600;font-size:.95em;max-width:100%;white-space:normal}
 .legend{list-style:none;padding:0;margin:.8rem 0 0}
 .legend li{display:flex;gap:.7rem;align-items:flex-start;margin:.55rem 0}
 .n{flex:none;width:1.6rem;height:1.6rem;border-radius:50%;background:var(--amber);color:#1C2438;font-weight:700;font-size:.85rem;display:flex;align-items:center;justify-content:center;margin-top:.1rem}
@@ -74,7 +74,8 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-
 </head>
 <body>
 <main>
-<p class="back"><a href="index.html">&larr; Support Vithey</a> · <a href="guide.html">Guide complet</a></p>
+<p class="back"><a href="index.html">&larr; Support Vithey</a> · <a href="guide.html#fr">Guide complet</a></p>
+<p class="back"><b>Français</b> · <a href="budget-en.html">English</a> · <a href="budget-it.html">Italiano</a> · <a href="budget-es.html">Español</a> · <a href="budget-pt-BR.html">Português (Brasil)</a> · <a href="budget-de.html">Deutsch</a></p>
 
 <h1>Le budget en images</h1>
 <p class="lead">Créer, modifier, supprimer et suivre son budget : un mois, une année, un voyage. Des phrases courtes, des schémas, et une FAQ à la fin.</p>
@@ -174,15 +175,15 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-
 </ol>
 
 <figure class="fig">
-<svg viewBox="0 0 360 250" role="img" aria-labelledby="f3t f3d">
+<svg viewBox="0 0 360 296" role="img" aria-labelledby="f3t f3d">
 <title id="f3t">Construire l'année en trois temps</title>
 <desc id="f3d">Un mois type enregistré pour tous les mois suivants, puis un ajustement pour décembre seul.</desc>
 <text x="8" y="20" class="tb s-ink">1. Un mois type, répété</text>
 <rect x="8" y="30" width="46" height="46" rx="10" class="s-paper" stroke="var(--line)"/><text x="31" y="58" text-anchor="middle" class="t s-ink2">Oct</text><rect x="63" y="30" width="46" height="46" rx="10" class="s-amber"/><text x="86" y="58" text-anchor="middle" class="t " fill="#1C2438">Nov</text><rect x="118" y="30" width="46" height="46" rx="10" class="s-amber"/><text x="141" y="58" text-anchor="middle" class="t " fill="#1C2438">Déc</text><rect x="173" y="30" width="46" height="46" rx="10" class="s-amber"/><text x="196" y="58" text-anchor="middle" class="t " fill="#1C2438">Jan</text><rect x="228" y="30" width="46" height="46" rx="10" class="s-amber"/><text x="251" y="58" text-anchor="middle" class="t " fill="#1C2438">Fév</text><rect x="283" y="30" width="46" height="46" rx="10" class="s-amber"/><text x="306" y="58" text-anchor="middle" class="t " fill="#1C2438">…</text>
-<text x="8" y="98" class="t s-ink">Tous les mois à partir de novembre</text><text x="8" y="116" class="ts s-ink2">prennent le même budget.</text>
-<text x="8" y="146" class="tb s-ink">2. Décembre est plus cher</text>
-<rect x="8" y="156" width="46" height="46" rx="10" class="s-paper" stroke="var(--line)"/><text x="31" y="184" text-anchor="middle" class="t s-ink2">Oct</text><rect x="63" y="156" width="46" height="46" rx="10" class="s-amber"/><text x="86" y="184" text-anchor="middle" class="t " fill="#1C2438">Nov</text><rect x="118" y="156" width="46" height="46" rx="10" class="s-coral"/><text x="141" y="184" text-anchor="middle" class="t " fill="#fff">Déc</text><rect x="173" y="156" width="46" height="46" rx="10" class="s-amber"/><text x="196" y="184" text-anchor="middle" class="t " fill="#1C2438">Jan</text><rect x="228" y="156" width="46" height="46" rx="10" class="s-amber"/><text x="251" y="184" text-anchor="middle" class="t " fill="#1C2438">Fév</text><rect x="283" y="156" width="46" height="46" rx="10" class="s-amber"/><text x="306" y="184" text-anchor="middle" class="t " fill="#1C2438">…</text>
-<text x="8" y="224" class="t s-ink">« Ce mois seulement » : seul décembre change ;</text><text x="8" y="242" class="ts s-ink2">janvier retrouve le budget normal.</text>
+<text x="8" y="98" class="t s-ink">Tous les mois à partir de novembre</text><text x="8" y="116" class="t s-ink">prennent le même budget.</text>
+<text x="8" y="159" class="tb s-ink">2. Décembre est plus cher</text>
+<rect x="8" y="169" width="46" height="46" rx="10" class="s-paper" stroke="var(--line)"/><text x="31" y="197" text-anchor="middle" class="t s-ink2">Oct</text><rect x="63" y="169" width="46" height="46" rx="10" class="s-amber"/><text x="86" y="197" text-anchor="middle" class="t " fill="#1C2438">Nov</text><rect x="118" y="169" width="46" height="46" rx="10" class="s-coral"/><text x="141" y="197" text-anchor="middle" class="t " fill="#fff">Déc</text><rect x="173" y="169" width="46" height="46" rx="10" class="s-amber"/><text x="196" y="197" text-anchor="middle" class="t " fill="#1C2438">Jan</text><rect x="228" y="169" width="46" height="46" rx="10" class="s-amber"/><text x="251" y="197" text-anchor="middle" class="t " fill="#1C2438">Fév</text><rect x="283" y="169" width="46" height="46" rx="10" class="s-amber"/><text x="306" y="197" text-anchor="middle" class="t " fill="#1C2438">…</text>
+<text x="8" y="235" class="t s-ink">« Ce mois seulement » : seul décembre</text><text x="8" y="253" class="t s-ink">change ; janvier retrouve le budget</text><text x="8" y="271" class="t s-ink">normal.</text>
 </svg>
 <figcaption>Orange : le budget normal. Rouge : un mois différent. Gris : un mois passé, qui ne change pas.</figcaption>
 </figure>
@@ -206,16 +207,15 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-
 </div>
 
 <figure class="fig">
-<svg viewBox="0 0 360 250" role="img" aria-labelledby="f4t f4d">
+<svg viewBox="0 0 360 295" role="img" aria-labelledby="f4t f4d">
 <title id="f4t">Ce mois seulement, ou tous les mois suivants</title>
 <desc id="f4d">Avec ce mois seulement, seul novembre change. Avec tous les mois suivants, novembre et tous les mois après changent.</desc>
 <text x="8" y="20" class="tb s-ink">Ce mois seulement</text>
 <rect x="8" y="30" width="46" height="46" rx="10" class="s-paper" stroke="var(--line)"/><text x="31" y="58" text-anchor="middle" class="t s-ink2">Oct</text><rect x="63" y="30" width="46" height="46" rx="10" class="s-coral"/><text x="86" y="58" text-anchor="middle" class="t " fill="#fff">Nov</text><rect x="118" y="30" width="46" height="46" rx="10" class="s-amberbg" stroke="var(--line)"/><text x="141" y="58" text-anchor="middle" class="t s-ink">Déc</text><rect x="173" y="30" width="46" height="46" rx="10" class="s-amberbg" stroke="var(--line)"/><text x="196" y="58" text-anchor="middle" class="t s-ink">Jan</text><rect x="228" y="30" width="46" height="46" rx="10" class="s-amberbg" stroke="var(--line)"/><text x="251" y="58" text-anchor="middle" class="t s-ink">Fév</text><rect x="283" y="30" width="46" height="46" rx="10" class="s-amberbg" stroke="var(--line)"/><text x="306" y="58" text-anchor="middle" class="t s-ink">…</text>
-<text x="8" y="98" class="ts s-ink2">Seul novembre change ; les mois suivants gardent leurs anciens montants.</text>
-<text x="8" y="140" class="tb s-ink">Ce mois et tous les mois suivants</text>
-<rect x="8" y="150" width="46" height="46" rx="10" class="s-paper" stroke="var(--line)"/><text x="31" y="178" text-anchor="middle" class="t s-ink2">Oct</text><rect x="63" y="150" width="46" height="46" rx="10" class="s-coral"/><text x="86" y="178" text-anchor="middle" class="t " fill="#fff">Nov</text><rect x="118" y="150" width="46" height="46" rx="10" class="s-coral"/><text x="141" y="178" text-anchor="middle" class="t " fill="#fff">Déc</text><rect x="173" y="150" width="46" height="46" rx="10" class="s-coral"/><text x="196" y="178" text-anchor="middle" class="t " fill="#fff">Jan</text><rect x="228" y="150" width="46" height="46" rx="10" class="s-coral"/><text x="251" y="178" text-anchor="middle" class="t " fill="#fff">Fév</text><rect x="283" y="150" width="46" height="46" rx="10" class="s-coral"/><text x="306" y="178" text-anchor="middle" class="t " fill="#fff">…</text>
-<text x="8" y="218" class="ts s-ink2">Novembre et tous les mois d'après prennent les nouveaux montants.</text>
-<text x="8" y="240" class="ts s-ink2">Rouge : ce qui change. Gris : le mois passé, jamais touché.</text>
+<text x="8" y="98" class="ts s-ink2">Seul novembre change ; les mois suivants gardent</text><text x="8" y="113" class="ts s-ink2">leurs anciens montants.</text>
+<text x="8" y="149" class="tb s-ink">Ce mois et tous les mois suivants</text>
+<rect x="8" y="159" width="46" height="46" rx="10" class="s-paper" stroke="var(--line)"/><text x="31" y="187" text-anchor="middle" class="t s-ink2">Oct</text><rect x="63" y="159" width="46" height="46" rx="10" class="s-coral"/><text x="86" y="187" text-anchor="middle" class="t " fill="#fff">Nov</text><rect x="118" y="159" width="46" height="46" rx="10" class="s-coral"/><text x="141" y="187" text-anchor="middle" class="t " fill="#fff">Déc</text><rect x="173" y="159" width="46" height="46" rx="10" class="s-coral"/><text x="196" y="187" text-anchor="middle" class="t " fill="#fff">Jan</text><rect x="228" y="159" width="46" height="46" rx="10" class="s-coral"/><text x="251" y="187" text-anchor="middle" class="t " fill="#fff">Fév</text><rect x="283" y="159" width="46" height="46" rx="10" class="s-coral"/><text x="306" y="187" text-anchor="middle" class="t " fill="#fff">…</text>
+<text x="8" y="227" class="ts s-ink2">Novembre et tous les mois d'après prennent les</text><text x="8" y="242" class="ts s-ink2">nouveaux montants.</text><text x="8" y="260" class="ts s-ink2">Rouge : ce qui change. Gris : le mois passé,</text><text x="8" y="275" class="ts s-ink2">jamais touché.</text>
 </svg>
 <figcaption>Un mois passé n'est jamais touché si tu ne le modifies pas toi-même.</figcaption>
 </figure>
@@ -237,7 +237,7 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-
 </ol>
 
 <figure class="fig">
-<svg viewBox="0 0 360 230" role="img" aria-labelledby="f5t f5d">
+<svg viewBox="0 0 360 244" role="img" aria-labelledby="f5t f5d">
 <title id="f5t">Le montant d'une catégorie est la somme de ses lignes</title>
 <desc id="f5d">Abonnements 25 euros est égal à Free 15 plus Cloud 5 plus Sans précision 5.</desc>
 <rect x="105" y="10" width="150" height="54" rx="14" class="s-amber"/>
@@ -247,7 +247,7 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-
 <rect x="126" y="104" width="108" height="62" rx="14" class="s-amberbg"/><text x="180" y="130" text-anchor="middle" class="tb s-ink">Cloud</text><text x="180" y="152" text-anchor="middle" class="t s-ink">5 €</text>
 <rect x="244" y="104" width="108" height="62" rx="14" class="s-paper" stroke="var(--line)"/><text x="298" y="130" text-anchor="middle" class="tb s-ink" font-size="12">Sans précision</text><text x="298" y="152" text-anchor="middle" class="t s-ink">5 €</text>
 <text x="180" y="200" text-anchor="middle" class="tb s-ink">15 + 5 + 5 = 25 €</text>
-<text x="180" y="220" text-anchor="middle" class="ts s-ink2">« Sans précision » garde la part non détaillée.</text>
+<text x="180" text-anchor="middle" y="222" class="ts s-ink2">« Sans précision » garde la part non détaillée.</text>
 </svg>
 <figcaption>Les sous-catégories se rangent par ordre alphabétique, et le nom que tu écris n'est pas traduit.</figcaption>
 </figure>
@@ -341,7 +341,7 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-
 
 <footer>
   <p>Une question qui n'est pas ici ? <a href="mailto:mailokcool@gmail.com">Écris-nous</a>.</p>
-  <p><a href="index.html">Support</a> · <a href="guide.html">Guide complet</a> · <a href="privacy.html">Confidentialité</a></p>
+  <p><a href="index.html">Support</a> · <a href="guide.html#fr">Guide complet</a> · <a href="privacy.html#fr">Confidentialité</a></p>
 </footer>
 </main>
 </body>
