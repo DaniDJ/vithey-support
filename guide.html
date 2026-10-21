@@ -114,7 +114,9 @@
 <h3>Lire le détail d'un mois</h3>
 <p>Dans la vue <b>Année</b> (« Mois par mois »), touche un mois : tu vois le <b>total des recettes</b> et le <b>total des dépenses</b>, puis toutes les recettes et toutes les dépenses saisies dans le mois, et le <b>solde réel</b> (excédent ou déficit), avec le solde prévu en dessous. Chaque ligne « Par catégorie » se lit « reçu / prévu » (recettes) ou « dépensé / prévu » (dépenses). La ligne « Prévu, sans détail » est la part du budget qui n'est rattachée à aucune catégorie. Les boutons permettent d'ajouter une dépense ou une recette non prévue dans ce mois, ou de préparer le mois.</p>
 <h3>Préparer toute l'année</h3>
-<p>« Préparer mon année » (en bas de l'onglet Budget, vue <b>Année</b>) saisit en un seul écran un total de dépenses et de recettes prévues pour chaque mois ; la <b>flèche ⌄</b> à droite d'un mois reprend ses deux montants sur tous les mois suivants, jusqu'à décembre (elle remplace ce qui y était saisi). Cet écran ne règle que des totaux : pour le détail par catégorie d'un mois, ouvre-le avec « Préparer un mois ». Pour une autre année, affiche-la avec les flèches « Année précédente » et « Année suivante », puis touche « Préparer mon année ». Le budget de l'année est la somme des budgets de chaque mois.</p>
+<p>« Préparer mon année » (en bas de l'onglet Budget, vue <b>Année</b>) commence par une carte <b>« Construire par catégories »</b> : son bouton ouvre le mois (le mois en cours pour l'année en cours, janvier pour une autre année) avec tes catégories. Remplis-les, enregistre en choisissant <b>« Ce mois et tous les mois suivants »</b> (proposé en premier), et les mois suivants prennent ce budget. Pour un mois à part (août, décembre…), touche son nom dans la grille : il s'ouvre par catégories. Sous la carte, la grille permet aussi de saisir un simple <b>total par mois</b> (dépenses et recettes) ; la <b>flèche ⌄</b> reprend les deux montants d'un mois sur les suivants. Les mois passés gardent leur montant si tu ne les modifies pas. Pour une autre année, affiche-la avec les flèches « Année précédente » et « Année suivante », puis touche « Préparer mon année ».</p>
+<h3>Détailler une catégorie en sous-catégories</h3>
+<p>Une catégorie qui a des sous-catégories (voir « Catégories et moyens de paiement ») porte un petit <b>astérisque *</b> dans le budget. Touche-la pour la déplier : une ligne par sous-catégorie, plus une ligne <b>« Sans précision »</b>. Le montant de la catégorie est toujours <b>la somme de ses lignes</b>. Un budget saisi avant les sous-catégories apparaît entièrement dans « Sans précision » : pour le répartir, baisse ce montant à mesure que tu en mets dans les sous-catégories. Les alertes (80 % et 100 %) restent calculées par catégorie. Le détail du mois, l'onglet Budget d'un voyage et les statistiques affichent aussi chaque sous-catégorie quand tu déplies sa catégorie.</p>
 
 <h2 id="fr-8">Statistiques et bilan</h2>
 <p>L'onglet <b>Statistiques</b> présente le total, le nombre de dépenses, la moyenne par jour (jours sans dépense inclus), la répartition par catégorie et par moyen de paiement, et, à deux, qui a payé quoi. La Maison a les mêmes vues pour le mois, avec les recettes.</p>
@@ -131,6 +133,9 @@
 <p>Pour supprimer une catégorie, glisse sa ligne vers la gauche. Ses dépenses passent dans <b>Autres</b> (ou « Autres revenus »), qui ne peut pas être supprimée.</p>
 <h3>Moyens de paiement</h3>
 <p>Réglages &gt; <b>Moyens de paiement</b> : ajoute les tiens (« Titres-restaurant », « Carte de Marie »…). Glisse vers la gauche pour supprimer : les dépenses sont conservées, sans moyen de paiement.</p>
+
+<h3>Sous-catégories</h3>
+<p>Pour détailler une catégorie (par exemple « Abonnements » en Free, Cloud, ChatGPT), ouvre-la dans Réglages &gt; Catégories, puis touche <b>Sous-catégories</b>, juste sous le nom. Tu les crées toi-même ; elles sont rangées par ordre alphabétique, et le nom que tu écris n'est pas traduit. Touche une ligne pour la renommer, glisse-la vers la gauche pour la supprimer : ses dépenses restent dans leur catégorie, sans précision. À la saisie, une catégorie qui a des sous-catégories demande laquelle choisir (ou « Sans précision ») ; les autres enregistrent d'un seul toucher, comme avant. Le fichier d'export contient une colonne « Sous-catégorie ».</p>
 
 <h2 id="fr-11">Offre et achat</h2>
 <ul>
@@ -297,7 +302,9 @@
 <h3>Reading a month in detail</h3>
 <p>In the <b>Year</b> view (“Month by month”), tap a month: you see the <b>total income</b> and the <b>total expenses</b>, then every income and every expense entered in the month, and the <b>actual balance</b> (surplus or deficit), with the planned balance below. Each “By category” line reads “received / planned” (income) or “spent / planned” (expenses). The “Planned, no breakdown” line is the part of the budget not tied to any category. The buttons let you add an unplanned expense or income in that month, or plan the month.</p>
 <h3>Planning the whole year</h3>
-<p>“Plan my year” (at the bottom of the Budget tab, <b>Year</b> view) enters, on one screen, a total of planned expenses and income for each month; the <b>⌄ arrow</b> to the right of a month copies its two amounts to all following months, through December (it replaces what was entered there). This screen sets totals only: for a month’s breakdown by category, open it with “Plan a month”. For another year, display it with the “Previous year” and “Next year” arrows, then tap “Plan my year”. The year’s budget is the sum of each month’s budget.</p>
+<p>“Plan my year” (at the bottom of the Budget tab, <b>Year</b> view) starts with a <b>“Build it by category”</b> card: its button opens the month (the current month for the current year, January for another year) with your categories. Fill them in, save by choosing <b>“This month and all following months”</b> (offered first), and the following months take this budget. For a month that is different (August, December…), tap its name in the grid: it opens by category. Below the card, the grid also lets you enter a simple <b>total per month</b> (expenses and income); the <b>⌄ arrow</b> copies a month's two amounts to the following months. Past months keep their amount unless you change them. For another year, show it with the “Previous year” and “Next year” arrows, then tap “Plan my year”.</p>
+<h3>Breaking a category down into subcategories</h3>
+<p>A category that has subcategories (see “Categories and payment methods”) carries a small <b>asterisk *</b> in the budget. Tap it to unfold it: one line per subcategory, plus a <b>“No detail”</b> line. The category's amount is always <b>the sum of its lines</b>. A budget entered before subcategories appears entirely under “No detail”: to split it, lower that amount as you fill in the subcategories. Alerts (80% and 100%) are still computed per category. The month detail, a trip's Budget tab and the statistics also show each subcategory when you unfold its category.</p>
 
 <h2 id="en-8">Statistics and summary</h2>
 <p>The <b>Statistics</b> tab shows the total, the number of expenses, the daily average (days without expenses included), the breakdown by category and by payment method and, for two, who paid what. Home has the same views for the month, with income.</p>
@@ -314,6 +321,9 @@
 <p>To delete a category, swipe its row to the left. Its expenses move to <b>Other</b> (or “Other income”), which cannot be deleted.</p>
 <h3>Payment methods</h3>
 <p>Settings &gt; <b>Payment methods</b>: add your own (“Meal vouchers”, “Marie’s card”…). Swipe left to delete: the expenses are kept, without a payment method.</p>
+
+<h3>Subcategories</h3>
+<p>To break a category down (for example “Subscriptions” into Free, Cloud, ChatGPT), open it in Settings &gt; Categories, then tap <b>Subcategories</b>, just under the name. You create them yourself; they are sorted alphabetically, and the name you type is not translated. Tap a row to rename it, swipe it left to delete it: its expenses stay in their category, with no detail. When you record an expense, a category that has subcategories asks which one to pick (or “No detail”); the others save with a single tap, as before. The export file has a “Subcategory” column.</p>
 
 <h2 id="en-11">Offer and purchase</h2>
 <ul>
@@ -480,7 +490,9 @@
 <h3>Leggere il dettaglio di un mese</h3>
 <p>Nella vista <b>Anno</b> («Mese per mese»), tocca un mese: vedi il <b>totale delle entrate</b> e il <b>totale delle spese</b>, poi tutte le entrate e tutte le spese inserite nel mese, e il <b>saldo reale</b> (avanzo o disavanzo), con il saldo previsto sotto. Ogni riga «Per categoria» si legge «ricevuto / previsto» (entrate) o «speso / previsto» (spese). La riga «Previsto, senza dettaglio» è la parte del budget non legata ad alcuna categoria. I pulsanti permettono di aggiungere una spesa o un’entrata non prevista in quel mese, o di preparare il mese.</p>
 <h3>Preparare tutto l’anno</h3>
-<p>«Prepara il mio anno» (in fondo alla scheda Budget, vista <b>Anno</b>) inserisce in una sola schermata un totale di spese e di entrate previste per ogni mese; la <b>freccia ⌄</b> a destra di un mese riporta i suoi due importi su tutti i mesi successivi, fino a dicembre (sostituisce ciò che vi era inserito). Questa schermata imposta solo dei totali: per il dettaglio per categoria di un mese, aprilo con «Prepara un mese». Per un altro anno, mostralo con le frecce «Anno precedente» e «Anno successivo», poi tocca «Prepara il mio anno». Il budget dell’anno è la somma dei budget di ogni mese.</p>
+<p>«Prepara il mio anno» (in fondo alla scheda Budget, vista <b>Anno</b>) inizia con una scheda <b>«Costruisci per categorie»</b>: il suo pulsante apre il mese (il mese in corso per l'anno in corso, gennaio per un altro anno) con le tue categorie. Compilale, salva scegliendo <b>«Questo mese e tutti i mesi successivi»</b> (proposto per primo) e i mesi successivi prendono questo budget. Per un mese diverso (agosto, dicembre…) tocca il suo nome nella griglia: si apre per categorie. Sotto la scheda, la griglia permette anche di inserire un semplice <b>totale per mese</b> (spese ed entrate); la <b>freccia ⌄</b> riprende i due importi di un mese sui mesi successivi. I mesi passati mantengono il loro importo se non li modifichi. Per un altro anno, mostralo con le frecce «Anno precedente» e «Anno successivo», poi tocca «Prepara il mio anno».</p>
+<h3>Dettagliare una categoria in sottocategorie</h3>
+<p>Una categoria che ha sottocategorie (vedi «Categorie e metodi di pagamento») porta un piccolo <b>asterisco *</b> nel budget. Toccala per aprirla: una riga per sottocategoria, più una riga <b>«Senza dettaglio»</b>. L'importo della categoria è sempre <b>la somma delle sue righe</b>. Un budget inserito prima delle sottocategorie appare interamente in «Senza dettaglio»: per ripartirlo, abbassa quell'importo man mano che compili le sottocategorie. Gli avvisi (80 % e 100 %) restano calcolati per categoria. Il dettaglio del mese, la scheda Budget di un viaggio e le statistiche mostrano anche ogni sottocategoria quando apri la sua categoria.</p>
 
 <h2 id="it-8">Statistiche e riepilogo</h2>
 <p>La scheda <b>Statistiche</b> presenta il totale, il numero di spese, la media al giorno (giorni senza spese inclusi), la ripartizione per categoria e per metodo di pagamento e, in due, chi ha pagato cosa. Casa ha le stesse viste per il mese, con le entrate.</p>
@@ -497,6 +509,9 @@
 <p>Per eliminare una categoria, fai scorrere la riga verso sinistra. Le sue spese passano in <b>Altro</b> (o «Altre entrate»), che non può essere eliminata.</p>
 <h3>Metodi di pagamento</h3>
 <p>Impostazioni &gt; <b>Metodi di pagamento</b>: aggiungi i tuoi («Buoni pasto», «Carta di Marie»…). Scorri verso sinistra per eliminare: le spese vengono conservate, senza metodo di pagamento.</p>
+
+<h3>Sottocategorie</h3>
+<p>Per dettagliare una categoria (per esempio «Abbonamenti» in Free, Cloud, ChatGPT), aprila in Impostazioni &gt; Categorie, poi tocca <b>Sottocategorie</b>, subito sotto il nome. Le crei tu; sono ordinate alfabeticamente e il nome che scrivi non viene tradotto. Tocca una riga per rinominarla, scorrila verso sinistra per eliminarla: le sue spese restano nella loro categoria, senza dettaglio. Quando registri una spesa, una categoria con sottocategorie chiede quale scegliere (o «Senza dettaglio»); le altre si salvano con un solo tocco, come prima. Il file di esportazione contiene una colonna «Sottocategoria».</p>
 
 <h2 id="it-11">Offerta e acquisto</h2>
 <ul>
@@ -663,7 +678,9 @@
 <h3>Leer el detalle de un mes</h3>
 <p>En la vista <b>Año</b> («Mes a mes»), toca un mes: ves el <b>total de ingresos</b> y el <b>total de gastos</b>, luego todos los ingresos y todos los gastos introducidos en el mes, y el <b>saldo real</b> (superávit o déficit), con el saldo previsto debajo. Cada línea «Por categoría» se lee «recibido / previsto» (ingresos) o «gastado / previsto» (gastos). La línea «Previsto, sin detalle» es la parte del presupuesto que no está ligada a ninguna categoría. Los botones permiten añadir un gasto o un ingreso no previsto en ese mes, o preparar el mes.</p>
 <h3>Preparar todo el año</h3>
-<p>«Preparar mi año» (al final de la pestaña Presupuesto, vista <b>Año</b>) introduce en una sola pantalla un total de gastos y de ingresos previstos para cada mes; la <b>flecha ⌄</b> a la derecha de un mes traslada sus dos importes a todos los meses siguientes, hasta diciembre (sustituye lo que había en ellos). Esta pantalla solo fija totales: para el detalle por categoría de un mes, ábrelo con «Preparar un mes». Para otro año, muéstralo con las flechas «Año anterior» y «Año siguiente» y toca «Preparar mi año». El presupuesto del año es la suma de los presupuestos de cada mes.</p>
+<p>«Preparar mi año» (al final de la pestaña Presupuesto, vista <b>Año</b>) empieza con una tarjeta <b>«Construir por categorías»</b>: su botón abre el mes (el mes en curso para el año en curso, enero para otro año) con tus categorías. Rellénalas, guarda eligiendo <b>«Este mes y todos los meses siguientes»</b> (se ofrece primero) y los meses siguientes toman este presupuesto. Para un mes distinto (agosto, diciembre…), toca su nombre en la cuadrícula: se abre por categorías. Debajo de la tarjeta, la cuadrícula también permite introducir un simple <b>total por mes</b> (gastos e ingresos); la <b>flecha ⌄</b> copia los dos importes de un mes a los meses siguientes. Los meses pasados conservan su importe si no los modificas. Para otro año, muéstralo con las flechas «Año anterior» y «Año siguiente» y toca «Preparar mi año».</p>
+<h3>Detallar una categoría en subcategorías</h3>
+<p>Una categoría que tiene subcategorías (consulta «Categorías y medios de pago») lleva un pequeño <b>asterisco *</b> en el presupuesto. Tócala para desplegarla: una línea por subcategoría, más una línea <b>«Sin detalle»</b>. El importe de la categoría es siempre <b>la suma de sus líneas</b>. Un presupuesto introducido antes de las subcategorías aparece entero en «Sin detalle»: para repartirlo, baja ese importe a medida que rellenes las subcategorías. Las alertas (80 % y 100 %) se siguen calculando por categoría. El detalle del mes, la pestaña Presupuesto de un viaje y las estadísticas también muestran cada subcategoría cuando despliegas su categoría.</p>
 
 <h2 id="es-8">Estadísticas y resumen</h2>
 <p>La pestaña <b>Estadísticas</b> presenta el total, el número de gastos, la media por día (incluidos los días sin gastos), el reparto por categoría y por medio de pago y, en pareja, quién pagó qué. La Casa tiene las mismas vistas para el mes, con los ingresos.</p>
@@ -680,6 +697,9 @@
 <p>Para eliminar una categoría, desliza su fila hacia la izquierda. Sus gastos pasan a <b>Otros</b> (o «Otros ingresos»), que no se puede eliminar.</p>
 <h3>Medios de pago</h3>
 <p>Ajustes &gt; <b>Medios de pago</b>: añade los tuyos («Tickets restaurante», «Tarjeta de Marie»…). Desliza a la izquierda para eliminar: los gastos se conservan, sin medio de pago.</p>
+
+<h3>Subcategorías</h3>
+<p>Para detallar una categoría (por ejemplo «Suscripciones» en Free, Cloud, ChatGPT), ábrela en Ajustes &gt; Categorías y toca <b>Subcategorías</b>, justo debajo del nombre. Las creas tú; se ordenan alfabéticamente y el nombre que escribes no se traduce. Toca una fila para renombrarla, desliza hacia la izquierda para eliminarla: sus gastos se quedan en su categoría, sin detalle. Al anotar un gasto, una categoría con subcategorías pregunta cuál elegir (o «Sin detalle»); las demás se guardan con un solo toque, como antes. El archivo de exportación incluye una columna «Subcategoría».</p>
 
 <h2 id="es-11">Oferta y compra</h2>
 <ul>
@@ -846,7 +866,9 @@
 <h3>Ler o detalhe de um mês</h3>
 <p>Na visão <b>Ano</b> («Mês a mês»), toque em um mês: você vê o <b>total das receitas</b> e o <b>total das despesas</b>, depois todas as receitas e todas as despesas lançadas no mês, e o <b>saldo real</b> (superávit ou déficit), com o saldo previsto embaixo. Cada linha «Por categoria» se lê «recebido / previsto» (receitas) ou «gasto / previsto» (despesas). A linha «Previsto, sem detalhe» é a parte do orçamento que não está ligada a nenhuma categoria. Os botões permitem adicionar uma despesa ou uma receita não prevista nesse mês, ou preparar o mês.</p>
 <h3>Preparar o ano inteiro</h3>
-<p>«Preparar meu ano» (no fim da aba Orçamento, visão <b>Ano</b>) informa em uma única tela um total de despesas e de receitas previstas para cada mês; a <b>seta ⌄</b> à direita de um mês leva seus dois valores para todos os meses seguintes, até dezembro (ela substitui o que havia neles). Essa tela só define totais: para o detalhe por categoria de um mês, abra-o com «Preparar um mês». Para outro ano, exiba-o com as setas «Ano anterior» e «Próximo ano» e toque em «Preparar meu ano». O orçamento do ano é a soma dos orçamentos de cada mês.</p>
+<p>“Preparar meu ano” (no fim da aba Orçamento, visão <b>Ano</b>) começa com um cartão <b>“Montar por categorias”</b>: o botão abre o mês (o mês atual para o ano atual, janeiro para outro ano) com suas categorias. Preencha-as, salve escolhendo <b>“Este mês e todos os meses seguintes”</b> (oferecido primeiro) e os meses seguintes assumem este orçamento. Para um mês diferente (agosto, dezembro…), toque no nome dele na grade: ele abre por categorias. Abaixo do cartão, a grade também permite informar um simples <b>total por mês</b> (despesas e receitas); a <b>seta ⌄</b> copia os dois valores de um mês para os meses seguintes. Os meses passados mantêm o valor se você não os alterar. Para outro ano, exiba-o com as setas “Ano anterior” e “Próximo ano” e toque em “Preparar meu ano”.</p>
+<h3>Detalhar uma categoria em subcategorias</h3>
+<p>Uma categoria que tem subcategorias (veja “Categorias e meios de pagamento”) leva um pequeno <b>asterisco *</b> no orçamento. Toque nela para expandir: uma linha por subcategoria, mais uma linha <b>“Sem detalhe”</b>. O valor da categoria é sempre <b>a soma das linhas</b>. Um orçamento informado antes das subcategorias aparece inteiro em “Sem detalhe”: para dividi-lo, reduza esse valor à medida que preencher as subcategorias. Os alertas (80 % e 100 %) continuam calculados por categoria. O detalhe do mês, a aba Orçamento de uma viagem e as estatísticas também mostram cada subcategoria quando você expande a categoria.</p>
 
 <h2 id="pt-BR-8">Estatísticas e resumo</h2>
 <p>A aba <b>Estatísticas</b> apresenta o total, o número de despesas, a média por dia (dias sem despesas incluídos), a divisão por categoria e por forma de pagamento e, em dupla, quem pagou o quê. A Casa tem as mesmas visões para o mês, com as receitas.</p>
@@ -863,6 +885,9 @@
 <p>Para excluir uma categoria, deslize a linha para a esquerda. Suas despesas passam para <b>Outros</b> (ou «Outras receitas»), que não pode ser excluída.</p>
 <h3>Formas de pagamento</h3>
 <p>Ajustes &gt; <b>Formas de pagamento</b>: adicione as suas («Vale-refeição», «Cartão da Marie»…). Deslize para a esquerda para excluir: as despesas são mantidas, sem forma de pagamento.</p>
+
+<h3>Subcategorias</h3>
+<p>Para detalhar uma categoria (por exemplo “Assinaturas” em Free, Cloud, ChatGPT), abra-a em Ajustes &gt; Categorias e toque em <b>Subcategorias</b>, logo abaixo do nome. Você mesmo as cria; elas ficam em ordem alfabética e o nome que você escreve não é traduzido. Toque em uma linha para renomeá-la, deslize para a esquerda para excluí-la: as despesas dela permanecem na categoria, sem detalhe. Ao registrar uma despesa, uma categoria com subcategorias pergunta qual escolher (ou “Sem detalhe”); as demais salvam com um único toque, como antes. O arquivo de exportação tem uma coluna “Subcategoria”.</p>
 
 <h2 id="pt-BR-11">Oferta e compra</h2>
 <ul>
@@ -1029,7 +1054,9 @@
 <h3>Einen Monat im Detail lesen</h3>
 <p>Tippe in der Ansicht <b>Jahr</b> („Monat für Monat“) auf einen Monat: Du siehst die <b>Summe der Einnahmen</b> und die <b>Summe der Ausgaben</b>, dann alle im Monat erfassten Einnahmen und Ausgaben und den <b>tatsächlichen Saldo</b> (Überschuss oder Defizit), darunter den geplanten Saldo. Jede Zeile „Nach Kategorie“ liest sich „erhalten / geplant“ (Einnahmen) oder „ausgegeben / geplant“ (Ausgaben). Die Zeile „Geplant, ohne Aufteilung“ ist der Teil des Budgets, der keiner Kategorie zugeordnet ist. Mit den Schaltflächen kannst du in diesem Monat eine ungeplante Ausgabe oder Einnahme hinzufügen oder den Monat planen.</p>
 <h3>Das ganze Jahr planen</h3>
-<p>„Mein Jahr planen“ (unten im Tab Budget, Ansicht <b>Jahr</b>) erfasst auf einem Bildschirm für jeden Monat eine Summe geplanter Ausgaben und Einnahmen; der <b>Pfeil ⌄</b> rechts neben einem Monat übernimmt seine beiden Beträge für alle folgenden Monate bis Dezember (er ersetzt, was dort eingegeben war). Dieser Bildschirm legt nur Summen fest: Für die Aufteilung eines Monats nach Kategorie öffne ihn mit „Einen Monat planen“. Für ein anderes Jahr zeige es mit den Pfeilen „Vorheriges Jahr“ und „Nächstes Jahr“ an und tippe dann auf „Mein Jahr planen“. Das Jahresbudget ist die Summe der Budgets aller Monate.</p>
+<p>„Mein Jahr planen“ (am Ende des Tabs Budget, Ansicht <b>Jahr</b>) beginnt mit einer Karte <b>„Nach Kategorien aufbauen“</b>: Ihre Schaltfläche öffnet den Monat (den aktuellen Monat im laufenden Jahr, Januar bei einem anderen Jahr) mit deinen Kategorien. Fülle sie aus, speichere mit <b>„Dieser Monat und alle folgenden Monate“</b> (wird zuerst angeboten), und die folgenden Monate übernehmen dieses Budget. Für einen besonderen Monat (August, Dezember …) tippe auf seinen Namen in der Tabelle: Er öffnet sich nach Kategorien. Unter der Karte kannst du in der Tabelle auch eine einfache <b>Summe pro Monat</b> (Ausgaben und Einnahmen) eingeben; der <b>Pfeil ⌄</b> übernimmt beide Beträge eines Monats für die folgenden Monate. Vergangene Monate behalten ihren Betrag, wenn du sie nicht änderst. Für ein anderes Jahr zeigst du es mit den Pfeilen „Vorheriges Jahr“ und „Nächstes Jahr“ an und tippst auf „Mein Jahr planen“.</p>
+<h3>Eine Kategorie in Unterkategorien aufteilen</h3>
+<p>Eine Kategorie mit Unterkategorien (siehe „Kategorien und Zahlungsarten“) trägt im Budget ein kleines <b>Sternchen *</b>. Tippe darauf, um sie aufzuklappen: eine Zeile pro Unterkategorie, dazu eine Zeile <b>„Ohne Detail“</b>. Der Betrag der Kategorie ist immer <b>die Summe ihrer Zeilen</b>. Ein Budget, das vor den Unterkategorien eingegeben wurde, steht ganz unter „Ohne Detail“: Um es aufzuteilen, senke diesen Betrag, während du die Unterkategorien ausfüllst. Die Warnungen (80 % und 100 %) werden weiterhin pro Kategorie berechnet. Monatsdetail, der Tab Budget einer Reise und die Statistik zeigen jede Unterkategorie ebenfalls, wenn du ihre Kategorie aufklappst.</p>
 
 <h2 id="de-8">Statistik und Bilanz</h2>
 <p>Der Tab <b>Statistik</b> zeigt die Summe, die Anzahl der Ausgaben, den Tagesdurchschnitt (Tage ohne Ausgaben eingerechnet), die Aufteilung nach Kategorie und Zahlungsart und, zu zweit, wer was bezahlt hat. Zuhause hat dieselben Ansichten für den Monat, mit den Einnahmen.</p>
@@ -1046,6 +1073,9 @@
 <p>Um eine Kategorie zu löschen, wische ihre Zeile nach links. Ihre Ausgaben wandern zu <b>Sonstiges</b> (oder „Sonstige Einnahmen“), die sich nicht löschen lässt.</p>
 <h3>Zahlungsarten</h3>
 <p>Einstellungen &gt; <b>Zahlungsarten</b>: Füge deine eigenen hinzu („Essensgutscheine“, „Maries Karte“ …). Wische nach links zum Löschen: Die Ausgaben bleiben erhalten, ohne Zahlungsart.</p>
+
+<h3>Unterkategorien</h3>
+<p>Um eine Kategorie aufzuteilen (zum Beispiel „Abos“ in Free, Cloud, ChatGPT), öffne sie unter Einstellungen &gt; Kategorien und tippe auf <b>Unterkategorien</b>, direkt unter dem Namen. Du legst sie selbst an; sie sind alphabetisch sortiert, und der Name, den du schreibst, wird nicht übersetzt. Tippe auf eine Zeile, um sie umzubenennen, wische nach links, um sie zu löschen: Ihre Ausgaben bleiben in ihrer Kategorie, ohne Detail. Beim Erfassen einer Ausgabe fragt eine Kategorie mit Unterkategorien, welche du wählst (oder „Ohne Detail“); die anderen werden wie bisher mit einem Tippen gespeichert. Die Exportdatei enthält eine Spalte „Unterkategorie“.</p>
 
 <h2 id="de-11">Angebot und Kauf</h2>
 <ul>
