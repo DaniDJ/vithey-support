@@ -42,11 +42,11 @@ h1{font:700 3.2rem/1.05 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,s
 .card{position:relative;display:block;padding:1.3rem 1.3rem 1.2rem;border-radius:18px;background:var(--page);border:1px solid var(--line);box-shadow:var(--shadow);text-decoration:none;color:inherit;overflow:hidden;transition:transform .15s}
 .card:hover{transform:translateY(-2px)}
 .card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c)}
-.card.guide{--c:var(--amber)}.card.priv{--c:var(--teal)}
+.card.guide{--c:var(--amber)}.card.priv{--c:var(--teal)}.card.budget{--c:var(--amber)}
 .card h2{margin:0 0 .25rem;font:700 1.2rem/1.25 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
 .card p{margin:0;color:var(--ink2);font-size:.95rem}
 .card .go{display:inline-block;margin-top:.8rem;font-weight:700;font-size:.92rem;color:var(--t)}
-.card.guide{--t:var(--amber-t)}.card.priv{--t:var(--teal-t)}
+.card.guide{--t:var(--amber-t)}.card.priv{--t:var(--teal-t)}.card.budget{--t:var(--amber-t)}
 .contact{margin:2.5rem 0 0;padding-top:1.4rem;border-top:2px dashed var(--line);text-align:center}
 .contact p{margin:0}
 .contact a{color:var(--amber-t);font-weight:700;white-space:nowrap}
@@ -74,6 +74,11 @@ a:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:
       <p data-t="guideP">Toutes les fonctions, pas à pas : saisie, devises, budget, voyage à deux, Maison.</p>
       <span class="go" data-t="read">Lire le guide →</span>
     </a>
+    <a class="card budget" id="budget" href="budget.html">
+      <h2 data-t="budgetT">Le budget en images</h2>
+      <p data-t="budgetP">Créer, modifier et suivre ton budget, pas à pas et en schémas, avec une FAQ.</p>
+      <span class="go" data-t="budgetGo">Voir le budget en images →</span>
+    </a>
     <a class="card priv" id="priv" href="privacy.html#fr">
       <h2 data-t="privT">Politique de confidentialité</h2>
       <p data-t="privP">Ce que Vithey fait, et ne fait pas, de tes données : tout reste sur ton téléphone.</p>
@@ -90,7 +95,7 @@ a:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:
 <script>
 (function(){
 var L={
-fr:{tag:"Le carnet de poche du voyageur",lead:"Tes dépenses de voyage et du quotidien, sur ton téléphone. Sans compte, sans publicité.",trip:"Voyage",home:"Maison",store:"Télécharger sur l'App Store",guideT:"Guide d'utilisation",guideP:"Toutes les fonctions, pas à pas : saisie, devises, budget, voyage à deux, Maison.",read:"Lire le guide →",privT:"Politique de confidentialité",privP:"Ce que Vithey fait, et ne fait pas, de tes données : tout reste sur ton téléphone.",read2:"Lire la politique →",contact:"Pour toute question ou assistance :"},
+fr:{tag:"Le carnet de poche du voyageur",lead:"Tes dépenses de voyage et du quotidien, sur ton téléphone. Sans compte, sans publicité.",trip:"Voyage",home:"Maison",store:"Télécharger sur l'App Store",guideT:"Guide d'utilisation",guideP:"Toutes les fonctions, pas à pas : saisie, devises, budget, voyage à deux, Maison.",read:"Lire le guide →",privT:"Politique de confidentialité",privP:"Ce que Vithey fait, et ne fait pas, de tes données : tout reste sur ton téléphone.",read2:"Lire la politique →",contact:"Pour toute question ou assistance :",budgetT:"Le budget en images",budgetP:"Créer, modifier et suivre ton budget, pas à pas et en schémas, avec une FAQ.",budgetGo:"Voir le budget en images →"},
 en:{tag:"The traveller's pocket notebook",lead:"Your travel and everyday expenses, on your phone. No account, no ads.",trip:"Trip",home:"Home",store:"Download on the App Store",guideT:"User guide",guideP:"Every feature, step by step: entry, currencies, budget, trips for two, Home.",read:"Read the guide →",privT:"Privacy policy",privP:"What Vithey does, and does not do, with your data: everything stays on your phone.",read2:"Read the policy →",contact:"For any question or support:"},
 it:{tag:"Il taccuino tascabile del viaggiatore",lead:"Le tue spese di viaggio e di tutti i giorni, sul tuo telefono. Senza account, senza pubblicità.",trip:"Viaggio",home:"Casa",store:"Scarica dall'App Store",guideT:"Guida all'uso",guideP:"Tutte le funzioni, passo dopo passo: inserimento, valute, budget, viaggio in due, Casa.",read:"Leggi la guida →",privT:"Informativa sulla privacy",privP:"Cosa fa, e cosa non fa, Vithey con i tuoi dati: tutto resta sul tuo telefono.",read2:"Leggi l'informativa →",contact:"Per qualsiasi domanda o assistenza:"},
 es:{tag:"El cuaderno de bolsillo del viajero",lead:"Tus gastos de viaje y del día a día, en tu teléfono. Sin cuenta, sin publicidad.",trip:"Viaje",home:"Casa",store:"Descargar en el App Store",guideT:"Guía de uso",guideP:"Todas las funciones, paso a paso: entrada, monedas, presupuesto, viaje de dos, Casa.",read:"Leer la guía →",privT:"Política de privacidad",privP:"Lo que Vithey hace, y no hace, con tus datos: todo se queda en tu teléfono.",read2:"Leer la política →",contact:"Para cualquier pregunta o asistencia:"},
@@ -102,7 +107,8 @@ var N=[["fr","Français"],["en","English"],["it","Italiano"],["es","Español"],[
 function pick(){var l=(navigator.language||"fr").toLowerCase();if(l.indexOf("pt")===0)return"pt-BR";var p=l.slice(0,2);return L[p]?p:"fr"}
 function set(l){
   var d=L[l];document.documentElement.lang=l;
-  document.querySelectorAll("[data-t]").forEach(function(e){e.textContent=d[e.getAttribute("data-t")]});
+  document.querySelectorAll("[data-t]").forEach(function(e){var v=d[e.getAttribute("data-t")];if(v!==undefined)e.textContent=v});
+  document.getElementById("budget").style.display=(l==="fr")?"":"none";
   document.getElementById("store").href="https://apps.apple.com/"+S[l]+"/app/id6759218602";
   document.getElementById("guide").href="guide.html#"+l;
   document.getElementById("priv").href="privacy.html#"+l;
