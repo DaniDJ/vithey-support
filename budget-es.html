@@ -15,7 +15,14 @@
   --coral:#D9573F;--coral-bg:#FBE3DD;
   --shadow:0 1px 2px rgba(28,36,56,.06),0 10px 28px rgba(28,36,56,.08);
 }
-@media (prefers-color-scheme:dark){:root{
+:root[data-theme=dark]{
+  --paper:#12151F;--page:#1B2030;--line:#2A3045;--ink:#F2EFE6;--ink2:#A3A9B8;
+  --amber:#F7B23E;--amber-t:#F7B23E;--amber-bg:#3A2D12;
+  --teal:#3DC4A9;--teal-t:#5FD6BE;--teal-bg:#12342E;
+  --coral:#F0836E;--coral-bg:#3B1E19;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.35);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
   --paper:#12151F;--page:#1B2030;--line:#2A3045;--ink:#F2EFE6;--ink2:#A3A9B8;
   --amber:#F7B23E;--amber-t:#F7B23E;--amber-bg:#3A2D12;
   --teal:#3DC4A9;--teal-t:#5FD6BE;--teal-bg:#12342E;
@@ -72,6 +79,7 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-
 .t{font-size:13px}.tb{font-size:13px;font-weight:700}.ts{font-size:11px}.tm{font-size:15px;font-weight:700}
 </style>
 <link rel="stylesheet" href="theme.css">
+<script src="theme.js"></script>
 </head>
 <body>
 <main>
