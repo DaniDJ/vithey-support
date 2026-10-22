@@ -44,3 +44,10 @@ svg text{font-family:var(--sans)}
 .mode-toggle:hover{background:rgba(128,128,128,.26)}
 .mode-toggle:focus-visible{outline:3px solid #F5A524;outline-offset:2px}
 @media print{.mode-toggle{display:none}}
+
+/* Guide : accès bien visible à la page « Le budget en images » */
+.budget-card{display:block;margin:1.2rem 0;padding:.85rem 1.1rem;border-left:4px solid #F5A524;border-radius:0 12px 12px 0;
+  background:rgba(245,165,36,.14);text-decoration:none;color:inherit}
+.budget-card b{display:block;font:600 1.15rem/1.25 var(--serif)}
+.budget-card span{display:block;margin-top:.15rem;font-size:.92rem;opacity:.85}
+.budget-card:hover{background:rgba(245,165,36,.24)}
