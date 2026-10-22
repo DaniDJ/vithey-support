@@ -34,3 +34,13 @@ main p a,main li a,.contact a{text-decoration-thickness:1px;text-underline-offse
 /* Chiffres alignés dans les tableaux et schémas */
 table,svg text{font-variant-numeric:tabular-nums}
 svg text{font-family:var(--sans)}
+
+/* Mode d'affichage manuel (theme.js) : l'attribut data-theme prime sur le réglage de l'appareil. */
+:root[data-theme="light"]{color-scheme:light}
+:root[data-theme="dark"]{color-scheme:dark}
+.mode-toggle{position:fixed;top:.6rem;right:.6rem;z-index:20;font:600 .8rem/1 var(--sans);padding:.5rem .7rem;border-radius:999px;
+  border:1px solid rgba(128,128,128,.4);background:rgba(128,128,128,.14);color:inherit;cursor:pointer;
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.mode-toggle:hover{background:rgba(128,128,128,.26)}
+.mode-toggle:focus-visible{outline:3px solid #F5A524;outline-offset:2px}
+@media print{.mode-toggle{display:none}}
