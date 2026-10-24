@@ -101,3 +101,16 @@ footer a:hover{color:var(--ink);text-decoration:underline}
 
 .langs{margin:.9rem 0 0;font-size:.9rem}
 .langs a[aria-current=true]{color:var(--ink);font-weight:700;text-decoration:underline}
+
+/* Sélecteur de langue du haut de page (sans JavaScript : <details>) */
+.top{position:relative}
+.lang{position:relative;font-size:.92rem;flex:none}
+.lang summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:.4rem;padding:.4rem .75rem;border:1px solid var(--line);border-radius:999px;background:var(--page);color:var(--ink);font-weight:600}
+.lang summary::-webkit-details-marker{display:none}
+.lang summary::after{content:"";width:.45rem;height:.45rem;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px)}
+.lang[open] summary::after{transform:rotate(-135deg) translateY(-2px)}
+.lang ul{position:absolute;right:0;top:calc(100% + .4rem);z-index:30;margin:0;padding:.35rem;list-style:none;min-width:11rem;border:1px solid var(--line);border-radius:14px;background:var(--page);box-shadow:var(--shadow)}
+.lang li a{display:block;padding:.45rem .75rem;border-radius:9px;color:var(--ink2);text-decoration:none}
+.lang li a:hover,.lang li a:focus-visible{background:var(--paper);color:var(--ink)}
+.lang li a[aria-current=true]{color:var(--ink);font-weight:700}
+@media(max-width:30rem){.top{margin-right:6.4rem;gap:.5rem}.brand{font-size:1.15rem;gap:.5rem}.brand img{width:32px;height:32px}.lang summary{padding:.35rem .6rem}}
