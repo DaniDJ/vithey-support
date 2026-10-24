@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="apple-itunes-app" content="app-id=6759218602">
+<title>Muskadia – Support</title>
+<meta name="description" content="Muskadia : tes dépenses de voyage et du quotidien, sur ton téléphone. Guide d'utilisation, confidentialité et assistance.">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+:root{
+  --paper:#F8F5EE;--page:#FFFDF8;--line:#E6DFCF;--ink:#1C2438;--ink2:#5C6578;
+  --amber:#F5A524;--amber-t:#8A5200;--amber-bg:#FDEFD0;
+  --teal:#1E9E86;--teal-t:#0F6B5A;--teal-bg:#D9F0EA;
+  --shadow:0 1px 2px rgba(28,36,56,.06),0 10px 28px rgba(28,36,56,.08);
+}
+:root[data-theme=dark]{
+  --paper:#12151F;--page:#1B2030;--line:#2A3045;--ink:#F2EFE6;--ink2:#A3A9B8;
+  --amber:#F7B23E;--amber-t:#F7B23E;--amber-bg:#3A2D12;
+  --teal:#3DC4A9;--teal-t:#5FD6BE;--teal-bg:#12342E;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.35);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --paper:#12151F;--page:#1B2030;--line:#2A3045;--ink:#F2EFE6;--ink2:#A3A9B8;
+  --amber:#F7B23E;--amber-t:#F7B23E;--amber-bg:#3A2D12;
+  --teal:#3DC4A9;--teal-t:#5FD6BE;--teal-bg:#12342E;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.35);
+}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  background-image:radial-gradient(60rem 28rem at 50% -8rem,var(--amber-bg),transparent 70%);background-repeat:no-repeat}
+main{max-width:40rem;margin:0 auto;padding:3.5rem 1.25rem 3rem}
+.hero{text-align:center}
+.icon{width:112px;height:112px;border-radius:25%;box-shadow:var(--shadow);display:block;margin:0 auto 1.4rem}
+h1{font:700 3.2rem/1.05 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;letter-spacing:-.02em;margin:0}
+.tag{font:italic 1.2rem/1.4 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;color:var(--amber-t);margin:.5rem 0 0}
+.former{margin:.3rem 0 0;font-size:.9rem;color:var(--ink2)}
+.lead{color:var(--ink2);max-width:30rem;margin:1.1rem auto 0}
+.spaces{display:flex;gap:.5rem;justify-content:center;margin:1.4rem 0 0;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:.4rem;padding:.3rem .8rem;border-radius:999px;font-size:.9rem;font-weight:600}
+.pill i{width:.55rem;height:.55rem;border-radius:50%;display:inline-block}
+.pill.trip{background:var(--amber-bg);color:var(--amber-t)}.pill.trip i{background:var(--amber)}
+.pill.home{background:var(--teal-bg);color:var(--teal-t)}.pill.home i{background:var(--teal)}
+.store{display:inline-block;margin-top:1.6rem;padding:.75rem 1.5rem;border-radius:14px;background:var(--amber);color:#1C2438;font-weight:700;text-decoration:none;box-shadow:var(--shadow)}
+.store:hover{filter:brightness(1.05)}
+.cards{display:grid;gap:1rem;margin:3rem 0 0}
+@media(min-width:34rem){.cards{grid-template-columns:1fr 1fr}}
+.card{position:relative;display:block;padding:1.3rem 1.3rem 1.2rem;border-radius:18px;background:var(--page);border:1px solid var(--line);box-shadow:var(--shadow);text-decoration:none;color:inherit;overflow:hidden;transition:transform .15s}
+.card:hover{transform:translateY(-2px)}
+.card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c)}
+.card.guide{--c:var(--amber)}.card.priv{--c:var(--teal)}.card.budget{--c:var(--amber)}
+.card h2{margin:0 0 .25rem;font:700 1.2rem/1.25 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+.card p{margin:0;color:var(--ink2);font-size:.95rem}
+.card .go{display:inline-block;margin-top:.8rem;font-weight:700;font-size:.92rem;color:var(--t)}
+.card.guide{--t:var(--amber-t)}.card.priv{--t:var(--teal-t)}.card.budget{--t:var(--amber-t)}
+.contact{margin:2.5rem 0 0;padding-top:1.4rem;border-top:2px dashed var(--line);text-align:center}
+.contact p{margin:0}
+.contact a{color:var(--amber-t);font-weight:700;white-space:nowrap}
+footer{margin-top:2.5rem;text-align:center;font-size:.9rem;color:var(--ink2)}
+footer a{color:var(--ink2);text-decoration:none;padding:0 .35rem}
+footer a[aria-current=true]{color:var(--ink);font-weight:700;text-decoration:underline}
+a:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:6px}
+@media(max-width:26rem){h1{font-size:2.7rem}}
+.homeback{margin:0 0 1.2rem;font-size:.95rem}
+.homeback a{color:var(--ink2);text-decoration:none}
+.homeback a:hover{color:var(--ink);text-decoration:underline}
+</style>
+<link rel="stylesheet" href="theme.css">
+<script src="theme.js"></script>
+</head>
+<body>
+<main>
+  <p class="homeback"><a id="homelink" href="/">&larr; Accueil</a></p>
+  <section class="hero">
+    <img class="icon" src="icon.png" alt="" width="112" height="112">
+    <h1>Muskadia</h1>
+    <p class="tag" data-t="tag">Le carnet de poche du voyageur</p>
+    <p class="former" data-t="former">Anciennement Vithey</p>
+    <p class="lead" data-t="lead">Tes dépenses de voyage et du quotidien, sur ton téléphone. Sans compte, sans publicité.</p>
+    <div class="spaces"><span class="pill trip"><i></i><span data-t="trip">Voyage</span></span><span class="pill home"><i></i><span data-t="home">Maison</span></span></div>
+    <a class="store" id="store" href="https://apps.apple.com/fr/app/id6759218602" data-t="store">Télécharger sur l'App Store</a>
+  </section>
+
+  <section class="cards">
+    <a class="card guide" id="guide" href="guide.html#fr">
+      <h2 data-t="guideT">Guide d'utilisation</h2>
+      <p data-t="guideP">Toutes les fonctions, pas à pas : saisie, devises, budget, voyage à deux, Maison.</p>
+      <span class="go" data-t="read">Lire le guide →</span>
+    </a>
+    <a class="card budget" id="budget" href="budget.html">
+      <h2 data-t="budgetT">Le budget en images</h2>
+      <p data-t="budgetP">Créer, modifier et suivre ton budget, pas à pas et en schémas, avec une FAQ.</p>
+      <span class="go" data-t="budgetGo">Voir le budget en images →</span>
+    </a>
+    <a class="card priv" id="priv" href="privacy.html#fr">
+      <h2 data-t="privT">Politique de confidentialité</h2>
+      <p data-t="privP">Ce que Muskadia fait, et ne fait pas, de tes données : tout reste sur ton téléphone.</p>
+      <span class="go" data-t="read2">Lire la politique →</span>
+    </a>
+  </section>
+
+  <section class="contact">
+    <p><span data-t="contact">Pour toute question ou assistance :</span> <a href="mailto:mailokcool@gmail.com">mailokcool@gmail.com</a></p>
+  </section>
+
+  <footer id="langs"></footer>
+</main>
+<script>
+(function(){
+var L={
+fr:{former:"Anciennement Vithey",tag:"Le carnet de poche du voyageur",lead:"Tes dépenses de voyage et du quotidien, sur ton téléphone. Sans compte, sans publicité.",trip:"Voyage",home:"Maison",store:"Télécharger sur l'App Store",guideT:"Guide d'utilisation",guideP:"Toutes les fonctions, pas à pas : saisie, devises, budget, voyage à deux, Maison.",read:"Lire le guide →",privT:"Politique de confidentialité",privP:"Ce que Muskadia fait, et ne fait pas, de tes données : tout reste sur ton téléphone.",read2:"Lire la politique →",contact:"Pour toute question ou assistance :",budgetT:"Le budget en images",budgetP:"Créer, modifier et suivre ton budget, pas à pas et en schémas, avec une FAQ.",budgetGo:"Voir le budget en images →"},
+en:{former:"Formerly Vithey",tag:"The traveller's pocket notebook",lead:"Your travel and everyday expenses, on your phone. No account, no ads.",trip:"Trip",home:"Home",store:"Download on the App Store",guideT:"User guide",guideP:"Every feature, step by step: entry, currencies, budget, trips for two, Home.",read:"Read the guide →",privT:"Privacy policy",privP:"What Muskadia does, and does not do, with your data: everything stays on your phone.",read2:"Read the policy →",contact:"For any question or support:",budgetT:"Budget in pictures",budgetP:"Create, edit and follow your budget, step by step and with diagrams, plus an FAQ.",budgetGo:"See the budget in pictures →"},
+it:{former:"Già Vithey",tag:"Il taccuino tascabile del viaggiatore",lead:"Le tue spese di viaggio e di tutti i giorni, sul tuo telefono. Senza account, senza pubblicità.",trip:"Viaggio",home:"Casa",store:"Scarica dall'App Store",guideT:"Guida all'uso",guideP:"Tutte le funzioni, passo dopo passo: inserimento, valute, budget, viaggio in due, Casa.",read:"Leggi la guida →",privT:"Informativa sulla privacy",privP:"Cosa fa, e cosa non fa, Muskadia con i tuoi dati: tutto resta sul tuo telefono.",read2:"Leggi l'informativa →",contact:"Per qualsiasi domanda o assistenza:",budgetT:"Il budget in immagini",budgetP:"Crea, modifica e segui il tuo budget, passo dopo passo e con schemi, più una FAQ.",budgetGo:"Vedi il budget in immagini →"},
+es:{former:"Antes Vithey",tag:"El cuaderno de bolsillo del viajero",lead:"Tus gastos de viaje y del día a día, en tu teléfono. Sin cuenta, sin publicidad.",trip:"Viaje",home:"Casa",store:"Descargar en el App Store",guideT:"Guía de uso",guideP:"Todas las funciones, paso a paso: entrada, monedas, presupuesto, viaje de dos, Casa.",read:"Leer la guía →",privT:"Política de privacidad",privP:"Lo que Muskadia hace, y no hace, con tus datos: todo se queda en tu teléfono.",read2:"Leer la política →",contact:"Para cualquier pregunta o asistencia:",budgetT:"El presupuesto en imágenes",budgetP:"Crea, modifica y sigue tu presupuesto, paso a paso y con esquemas, y una FAQ.",budgetGo:"Ver el presupuesto en imágenes →"},
+"pt-BR":{former:"Antigo Vithey",tag:"O caderno de bolso do viajante",lead:"Suas despesas de viagem e do dia a dia, no seu celular. Sem conta, sem anúncios.",trip:"Viagem",home:"Casa",store:"Baixar na App Store",guideT:"Guia de uso",guideP:"Todas as funções, passo a passo: entrada, moedas, orçamento, viagem em dupla, Casa.",read:"Ler o guia →",privT:"Política de privacidade",privP:"O que o Muskadia faz, e não faz, com seus dados: tudo fica no seu celular.",read2:"Ler a política →",contact:"Para qualquer dúvida ou suporte:",budgetT:"O orçamento em imagens",budgetP:"Crie, edite e acompanhe seu orçamento, passo a passo e com esquemas, mais uma FAQ.",budgetGo:"Ver o orçamento em imagens →"},
+de:{former:"Früher Vithey",tag:"Das Reisenotizbuch für die Tasche",lead:"Deine Reise- und Alltagsausgaben, auf deinem Telefon. Ohne Konto, ohne Werbung.",trip:"Reise",home:"Zuhause",store:"Laden im App Store",guideT:"Benutzerhandbuch",guideP:"Alle Funktionen, Schritt für Schritt: Eingabe, Währungen, Budget, Reise zu zweit, Zuhause.",read:"Handbuch lesen →",privT:"Datenschutzerklärung",privP:"Was Muskadia mit deinen Daten tut, und was nicht: alles bleibt auf deinem Telefon.",read2:"Erklärung lesen →",contact:"Bei Fragen oder für Support:",budgetT:"Das Budget in Bildern",budgetP:"Erstelle, ändere und verfolge dein Budget, Schritt für Schritt und mit Schaubildern, plus FAQ.",budgetGo:"Das Budget in Bildern ansehen →"}
+};
+var HD={"fr":"/","en":"/en/","it":"/it/","es":"/es/","pt-BR":"/pt-br/","de":"/de/"},HW={"fr":"Accueil","en":"Home page","it":"Pagina iniziale","es":"Inicio","pt-BR":"Início","de":"Startseite"};
+var S={fr:"fr",en:"us",it:"it",es:"es","pt-BR":"br",de:"de"};
+var N=[["fr","Français"],["en","English"],["it","Italiano"],["es","Español"],["pt-BR","Português (Brasil)"],["de","Deutsch"]];
+function pick(){var l=(navigator.language||"fr").toLowerCase();if(l.indexOf("pt")===0)return"pt-BR";var p=l.slice(0,2);return L[p]?p:"fr"}
+function set(l){
+  var d=L[l];document.documentElement.lang=l;
+  document.querySelectorAll("[data-t]").forEach(function(e){var v=d[e.getAttribute("data-t")];if(v!==undefined)e.textContent=v});
+  var hl=document.getElementById("homelink");hl.href=HD[l];hl.textContent="\u2190 "+HW[l];
+  document.getElementById("budget").href=(l==="fr")?"budget.html":"budget-"+l+".html";
+  document.getElementById("store").href="https://apps.apple.com/"+S[l]+"/app/id6759218602";
+  document.getElementById("guide").href="guide.html#"+l;
+  document.getElementById("priv").href="privacy.html#"+l;
+  var f=document.getElementById("langs");f.innerHTML="";
+  N.forEach(function(n,i){var a=document.createElement("a");a.href="#";a.textContent=n[1];if(n[0]===l)a.setAttribute("aria-current","true");
+    a.onclick=function(e){e.preventDefault();set(n[0])};f.appendChild(a);if(i<N.length-1)f.appendChild(document.createTextNode("·"))});
+}
+set(pick());
+})();
+</script>
+</body>
+</html>

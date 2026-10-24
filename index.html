@@ -2,132 +2,313 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="apple-itunes-app" content="app-id=6759218602">
-<title>Muskadia – Support</title>
-<meta name="description" content="Muskadia : tes dépenses de voyage et du quotidien, sur ton téléphone. Guide d'utilisation, confidentialité et assistance.">
-<link rel="icon" href="favicon.png">
-<link rel="apple-touch-icon" href="icon.png">
-<style>
-:root{
-  --paper:#F8F5EE;--page:#FFFDF8;--line:#E6DFCF;--ink:#1C2438;--ink2:#5C6578;
-  --amber:#F5A524;--amber-t:#8A5200;--amber-bg:#FDEFD0;
-  --teal:#1E9E86;--teal-t:#0F6B5A;--teal-bg:#D9F0EA;
-  --shadow:0 1px 2px rgba(28,36,56,.06),0 10px 28px rgba(28,36,56,.08);
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Muskadia : dépenses de voyage et budget maison, sur iPhone</title>
+<meta name="description" content="Notez vos dépenses de voyage en devises et suivez le budget de la maison, sur iPhone. Partage à deux, carte, sans compte ni publicité.">
+<link rel="canonical" href="https://muskadia.fr/">
+<link rel="alternate" hreflang="fr" href="https://muskadia.fr/">
+<link rel="alternate" hreflang="en" href="https://muskadia.fr/en/">
+<link rel="alternate" hreflang="it" href="https://muskadia.fr/it/">
+<link rel="alternate" hreflang="es" href="https://muskadia.fr/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://muskadia.fr/pt-br/">
+<link rel="alternate" hreflang="de" href="https://muskadia.fr/de/">
+<link rel="alternate" hreflang="x-default" href="https://muskadia.fr/en/">
+<meta name="apple-itunes-app" content="app-id=6759218602">
+<meta name="theme-color" content="#F8F5EE">
+<link rel="icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Muskadia">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:url" content="https://muskadia.fr/">
+<meta property="og:title" content="Muskadia : dépenses de voyage et budget maison, sur iPhone">
+<meta property="og:description" content="Notez une dépense en deux gestes, dans toutes les devises. Voyages, Maison, carte et budget : tout reste sur votre iPhone, sans compte.">
+<meta property="og:image" content="https://muskadia.fr/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="L&#x27;écran d&#x27;accueil de Muskadia, avec un voyage et le budget de la maison">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Muskadia : dépenses de voyage et budget maison, sur iPhone">
+<meta name="twitter:description" content="Notez une dépense en deux gestes, dans toutes les devises. Sans compte, sans publicité.">
+<meta name="twitter:image" content="https://muskadia.fr/img/og.png">
+<link rel="stylesheet" href="/landing.css">
+<link rel="stylesheet" href="/theme.css">
+<script src="/theme.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Muskadia",
+  "alternateName": "Vithey",
+  "url": "https://muskadia.fr/",
+  "description": "Muskadia note les dépenses de voyage dans la devise du pays, calcule le total dans celle de l'utilisateur, partage les comptes à deux et suit le budget de la maison. Sur iPhone, sans compte ni publicité.",
+  "applicationCategory": "TravelApplication",
+  "operatingSystem": "iOS",
+  "inLanguage": [
+    "fr",
+    "en",
+    "it",
+    "es",
+    "pt-BR",
+    "de"
+  ],
+  "downloadUrl": "https://apps.apple.com/fr/app/muskadia/id6759218602",
+  "installUrl": "https://apps.apple.com/fr/app/muskadia/id6759218602",
+  "image": "https://muskadia.fr/img/og.png",
+  "screenshot": [
+    "https://muskadia.fr/img/01-accueil.webp",
+    "https://muskadia.fr/img/02-saisie.webp",
+    "https://muskadia.fr/img/04-preparer-mois.webp",
+    "https://muskadia.fr/img/06-budget-voyage.webp",
+    "https://muskadia.fr/img/08-carte.webp",
+    "https://muskadia.fr/img/09-statistiques.webp"
+  ],
+  "featureList": [
+    "Saisie d'une dépense en deux gestes",
+    "Dépenses en devise étrangère, converties au taux du jour, même sans connexion",
+    "Partage des dépenses à deux : qui a payé, la part de chacun, qui doit quoi",
+    "Budget par voyage et par catégorie, avec sous-catégories et alertes à 80 % et 100 %",
+    "La Maison : budget du mois, recettes, solde et vue de l'année",
+    "Géolocalisation des dépenses avec l'autorisation de l'utilisateur : carte des lieux et parcours du voyage",
+    "Photos de reçus conservées dans l'app",
+    "Statistiques, export tableur et sauvegarde complète",
+    "Verrouillage par Face ID, Touch ID ou code",
+    "Sans compte, sans publicité, sans suivi"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock"
+  }
 }
-:root[data-theme=dark]{
-  --paper:#12151F;--page:#1B2030;--line:#2A3045;--ink:#F2EFE6;--ink2:#A3A9B8;
-  --amber:#F7B23E;--amber-t:#F7B23E;--amber-bg:#3A2D12;
-  --teal:#3DC4A9;--teal-t:#5FD6BE;--teal-bg:#12342E;
-  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.35);
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "fr",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qu'est-ce que Muskadia ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Une application iPhone pour noter ses dépenses de voyage dans la devise du pays et suivre le budget du quotidien, dans un espace appelé la Maison. Elle s'appelait Vithey jusqu'au 22 octobre 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Faut-il créer un compte ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. Il n'y a ni compte ni serveur qui reçoit vos dépenses : tout est enregistré sur votre iPhone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ça marche sans connexion ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Sans réseau, la dépense est notée et convertie dès que la connexion revient."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Peut-on partager les dépenses à deux ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Pour chaque dépense, on indique qui a payé et la part de chacun, et Muskadia calcule qui doit quoi à qui."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Muskadia utilise-t-elle ma position ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Seulement avec votre autorisation, et seulement quand vous la demandez pour une dépense. Elle sert à placer la dépense sur la carte et à dessiner le parcours de votre voyage. Si vous la refusez, tapez simplement le nom du lieu : l'application reste utilisable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mes données sont-elles envoyées quelque part ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vos dépenses restent sur votre téléphone. L'application télécharge seulement une liste de taux de change, sans rien envoyer de vos données. Il n'y a ni publicité ni outil de suivi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Est-ce gratuit ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le premier voyage est offert avec toutes ses fonctions, et la Maison est gratuite. Pour ouvrir d'autres voyages, il y a un achat unique, sans abonnement. Le prix est celui affiché par l'App Store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "En quelles langues ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En français, anglais, italien, espagnol, portugais (Brésil) et allemand."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Je venais de Vithey : retrouve-je mes voyages ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Vithey est devenue Muskadia : c'est la même application, et vos voyages sont repris."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment récupérer mes données ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dans les réglages, l'export produit un tableur (CSV) et la sauvegarde complète peut être restaurée en un geste."
+      }
+    }
+  ]
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
-  --paper:#12151F;--page:#1B2030;--line:#2A3045;--ink:#F2EFE6;--ink2:#A3A9B8;
-  --amber:#F7B23E;--amber-t:#F7B23E;--amber-bg:#3A2D12;
-  --teal:#3DC4A9;--teal-t:#5FD6BE;--teal-bg:#12342E;
-  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px rgba(0,0,0,.35);
-}}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
-  background-image:radial-gradient(60rem 28rem at 50% -8rem,var(--amber-bg),transparent 70%);background-repeat:no-repeat}
-main{max-width:40rem;margin:0 auto;padding:3.5rem 1.25rem 3rem}
-.hero{text-align:center}
-.icon{width:112px;height:112px;border-radius:25%;box-shadow:var(--shadow);display:block;margin:0 auto 1.4rem}
-h1{font:700 3.2rem/1.05 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;letter-spacing:-.02em;margin:0}
-.tag{font:italic 1.2rem/1.4 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;color:var(--amber-t);margin:.5rem 0 0}
-.former{margin:.3rem 0 0;font-size:.9rem;color:var(--ink2)}
-.lead{color:var(--ink2);max-width:30rem;margin:1.1rem auto 0}
-.spaces{display:flex;gap:.5rem;justify-content:center;margin:1.4rem 0 0;flex-wrap:wrap}
-.pill{display:inline-flex;align-items:center;gap:.4rem;padding:.3rem .8rem;border-radius:999px;font-size:.9rem;font-weight:600}
-.pill i{width:.55rem;height:.55rem;border-radius:50%;display:inline-block}
-.pill.trip{background:var(--amber-bg);color:var(--amber-t)}.pill.trip i{background:var(--amber)}
-.pill.home{background:var(--teal-bg);color:var(--teal-t)}.pill.home i{background:var(--teal)}
-.store{display:inline-block;margin-top:1.6rem;padding:.75rem 1.5rem;border-radius:14px;background:var(--amber);color:#1C2438;font-weight:700;text-decoration:none;box-shadow:var(--shadow)}
-.store:hover{filter:brightness(1.05)}
-.cards{display:grid;gap:1rem;margin:3rem 0 0}
-@media(min-width:34rem){.cards{grid-template-columns:1fr 1fr}}
-.card{position:relative;display:block;padding:1.3rem 1.3rem 1.2rem;border-radius:18px;background:var(--page);border:1px solid var(--line);box-shadow:var(--shadow);text-decoration:none;color:inherit;overflow:hidden;transition:transform .15s}
-.card:hover{transform:translateY(-2px)}
-.card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c)}
-.card.guide{--c:var(--amber)}.card.priv{--c:var(--teal)}.card.budget{--c:var(--amber)}
-.card h2{margin:0 0 .25rem;font:700 1.2rem/1.25 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
-.card p{margin:0;color:var(--ink2);font-size:.95rem}
-.card .go{display:inline-block;margin-top:.8rem;font-weight:700;font-size:.92rem;color:var(--t)}
-.card.guide{--t:var(--amber-t)}.card.priv{--t:var(--teal-t)}.card.budget{--t:var(--amber-t)}
-.contact{margin:2.5rem 0 0;padding-top:1.4rem;border-top:2px dashed var(--line);text-align:center}
-.contact p{margin:0}
-.contact a{color:var(--amber-t);font-weight:700;white-space:nowrap}
-footer{margin-top:2.5rem;text-align:center;font-size:.9rem;color:var(--ink2)}
-footer a{color:var(--ink2);text-decoration:none;padding:0 .35rem}
-footer a[aria-current=true]{color:var(--ink);font-weight:700;text-decoration:underline}
-a:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:6px}
-@media(max-width:26rem){h1{font-size:2.7rem}}
-</style>
-<link rel="stylesheet" href="theme.css">
-<script src="theme.js"></script>
+</script>
 </head>
 <body>
-<main>
-  <section class="hero">
-    <img class="icon" src="icon.png" alt="" width="112" height="112">
-    <h1>Muskadia</h1>
-    <p class="tag" data-t="tag">Le carnet de poche du voyageur</p>
-    <p class="former" data-t="former">Anciennement Vithey</p>
-    <p class="lead" data-t="lead">Tes dépenses de voyage et du quotidien, sur ton téléphone. Sans compte, sans publicité.</p>
-    <div class="spaces"><span class="pill trip"><i></i><span data-t="trip">Voyage</span></span><span class="pill home"><i></i><span data-t="home">Maison</span></span></div>
-    <a class="store" id="store" href="https://apps.apple.com/fr/app/id6759218602" data-t="store">Télécharger sur l'App Store</a>
-  </section>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="/"><img src="/icon.png" width="38" height="38" alt="">Muskadia</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#carte">Carte</a>
+      <a href="#fonctions">Fonctions</a>
+      <a href="#donnees">Vos données</a>
+      <a href="#faq">Questions</a>
+      <a href="/guide.html#fr">Guide</a>
+      <a href="/support.html">Support</a>
+    </nav>
+  </header>
 
-  <section class="cards">
-    <a class="card guide" id="guide" href="guide.html#fr">
-      <h2 data-t="guideT">Guide d'utilisation</h2>
-      <p data-t="guideP">Toutes les fonctions, pas à pas : saisie, devises, budget, voyage à deux, Maison.</p>
-      <span class="go" data-t="read">Lire le guide →</span>
-    </a>
-    <a class="card budget" id="budget" href="budget.html">
-      <h2 data-t="budgetT">Le budget en images</h2>
-      <p data-t="budgetP">Créer, modifier et suivre ton budget, pas à pas et en schémas, avec une FAQ.</p>
-      <span class="go" data-t="budgetGo">Voir le budget en images →</span>
-    </a>
-    <a class="card priv" id="priv" href="privacy.html#fr">
-      <h2 data-t="privT">Politique de confidentialité</h2>
-      <p data-t="privP">Ce que Muskadia fait, et ne fait pas, de tes données : tout reste sur ton téléphone.</p>
-      <span class="go" data-t="read2">Lire la politique →</span>
-    </a>
-  </section>
+  <main>
+    <div class="hero">
+      <div>
+        <h1>Vos dépenses de voyage et du quotidien, en deux gestes.</h1>
+        <p class="lead">Muskadia note vos dépenses dans la devise du pays, calcule le total dans la vôtre et suit le budget de la maison. Sur iPhone, sans compte, sans publicité.</p>
+        <div class="cta">
+          <a class="store" href="https://apps.apple.com/fr/app/muskadia/id6759218602">Télécharger sur l&#x27;App Store</a>
+          <a class="ghost" href="#fonctions">Voir les fonctions</a>
+        </div>
+        <div class="pills"><span class="pill trip"><i></i>Voyage</span><span class="pill home"><i></i>Maison</span></div>
+        <p class="former">Anciennement Vithey : la même application, un nouveau nom.</p>
+      </div>
+      <div class="phones">
+        <img class="phone" src="/img/01-accueil.webp" width="520" height="1130" alt="L&#x27;accueil de Muskadia : un voyage au Japon avec son budget, et la Maison avec le solde du mois">
+        <img class="phone" src="/img/02-saisie.webp" width="520" height="1130" alt="La saisie d&#x27;une dépense de 4 800 yens, convertie en euros en direct">
+      </div>
+    </div>
 
-  <section class="contact">
-    <p><span data-t="contact">Pour toute question ou assistance :</span> <a href="mailto:mailokcool@gmail.com">mailokcool@gmail.com</a></p>
-  </section>
+    <section id="saisie">
+      <div class="split">
+        <div>
+          <p class="eyebrow">Saisie rapide</p>
+          <h2>Le montant, une catégorie : c&#x27;est noté.</h2>
+          <p class="sub">Tapez le montant dans la devise du pays : la conversion s&#x27;affiche en direct. Une catégorie, et la dépense est enregistrée, avec un message pour l&#x27;annuler si vous vous êtes trompé.</p>
+          <ul class="ticks">
+            <li>Toutes les devises, au taux du jour.</li>
+            <li>Sans connexion, la dépense est notée et convertie dès que le réseau revient.</li>
+            <li>Une dépense peut couvrir plusieurs jours : une nuit d&#x27;hôtel, une location.</li>
+            <li>Photographiez un reçu : il reste dans l&#x27;app, jamais dans votre photothèque.</li>
+          </ul>
+        </div>
+        <img class="phone" loading="lazy" src="/img/03-sous-categorie.webp" width="520" height="1130" alt="Le choix d&#x27;une sous-catégorie lors de la saisie d&#x27;une dépense d&#x27;abonnement">
+      </div>
+    </section>
 
-  <footer id="langs"></footer>
-</main>
-<script>
-(function(){
-var L={
-fr:{former:"Anciennement Vithey",tag:"Le carnet de poche du voyageur",lead:"Tes dépenses de voyage et du quotidien, sur ton téléphone. Sans compte, sans publicité.",trip:"Voyage",home:"Maison",store:"Télécharger sur l'App Store",guideT:"Guide d'utilisation",guideP:"Toutes les fonctions, pas à pas : saisie, devises, budget, voyage à deux, Maison.",read:"Lire le guide →",privT:"Politique de confidentialité",privP:"Ce que Muskadia fait, et ne fait pas, de tes données : tout reste sur ton téléphone.",read2:"Lire la politique →",contact:"Pour toute question ou assistance :",budgetT:"Le budget en images",budgetP:"Créer, modifier et suivre ton budget, pas à pas et en schémas, avec une FAQ.",budgetGo:"Voir le budget en images →"},
-en:{former:"Formerly Vithey",tag:"The traveller's pocket notebook",lead:"Your travel and everyday expenses, on your phone. No account, no ads.",trip:"Trip",home:"Home",store:"Download on the App Store",guideT:"User guide",guideP:"Every feature, step by step: entry, currencies, budget, trips for two, Home.",read:"Read the guide →",privT:"Privacy policy",privP:"What Muskadia does, and does not do, with your data: everything stays on your phone.",read2:"Read the policy →",contact:"For any question or support:",budgetT:"Budget in pictures",budgetP:"Create, edit and follow your budget, step by step and with diagrams, plus an FAQ.",budgetGo:"See the budget in pictures →"},
-it:{former:"Già Vithey",tag:"Il taccuino tascabile del viaggiatore",lead:"Le tue spese di viaggio e di tutti i giorni, sul tuo telefono. Senza account, senza pubblicità.",trip:"Viaggio",home:"Casa",store:"Scarica dall'App Store",guideT:"Guida all'uso",guideP:"Tutte le funzioni, passo dopo passo: inserimento, valute, budget, viaggio in due, Casa.",read:"Leggi la guida →",privT:"Informativa sulla privacy",privP:"Cosa fa, e cosa non fa, Muskadia con i tuoi dati: tutto resta sul tuo telefono.",read2:"Leggi l'informativa →",contact:"Per qualsiasi domanda o assistenza:",budgetT:"Il budget in immagini",budgetP:"Crea, modifica e segui il tuo budget, passo dopo passo e con schemi, più una FAQ.",budgetGo:"Vedi il budget in immagini →"},
-es:{former:"Antes Vithey",tag:"El cuaderno de bolsillo del viajero",lead:"Tus gastos de viaje y del día a día, en tu teléfono. Sin cuenta, sin publicidad.",trip:"Viaje",home:"Casa",store:"Descargar en el App Store",guideT:"Guía de uso",guideP:"Todas las funciones, paso a paso: entrada, monedas, presupuesto, viaje de dos, Casa.",read:"Leer la guía →",privT:"Política de privacidad",privP:"Lo que Muskadia hace, y no hace, con tus datos: todo se queda en tu teléfono.",read2:"Leer la política →",contact:"Para cualquier pregunta o asistencia:",budgetT:"El presupuesto en imágenes",budgetP:"Crea, modifica y sigue tu presupuesto, paso a paso y con esquemas, y una FAQ.",budgetGo:"Ver el presupuesto en imágenes →"},
-"pt-BR":{former:"Antigo Vithey",tag:"O caderno de bolso do viajante",lead:"Suas despesas de viagem e do dia a dia, no seu celular. Sem conta, sem anúncios.",trip:"Viagem",home:"Casa",store:"Baixar na App Store",guideT:"Guia de uso",guideP:"Todas as funções, passo a passo: entrada, moedas, orçamento, viagem em dupla, Casa.",read:"Ler o guia →",privT:"Política de privacidade",privP:"O que o Muskadia faz, e não faz, com seus dados: tudo fica no seu celular.",read2:"Ler a política →",contact:"Para qualquer dúvida ou suporte:",budgetT:"O orçamento em imagens",budgetP:"Crie, edite e acompanhe seu orçamento, passo a passo e com esquemas, mais uma FAQ.",budgetGo:"Ver o orçamento em imagens →"},
-de:{former:"Früher Vithey",tag:"Das Reisenotizbuch für die Tasche",lead:"Deine Reise- und Alltagsausgaben, auf deinem Telefon. Ohne Konto, ohne Werbung.",trip:"Reise",home:"Zuhause",store:"Laden im App Store",guideT:"Benutzerhandbuch",guideP:"Alle Funktionen, Schritt für Schritt: Eingabe, Währungen, Budget, Reise zu zweit, Zuhause.",read:"Handbuch lesen →",privT:"Datenschutzerklärung",privP:"Was Muskadia mit deinen Daten tut, und was nicht: alles bleibt auf deinem Telefon.",read2:"Erklärung lesen →",contact:"Bei Fragen oder für Support:",budgetT:"Das Budget in Bildern",budgetP:"Erstelle, ändere und verfolge dein Budget, Schritt für Schritt und mit Schaubildern, plus FAQ.",budgetGo:"Das Budget in Bildern ansehen →"}
-};
-var S={fr:"fr",en:"us",it:"it",es:"es","pt-BR":"br",de:"de"};
-var N=[["fr","Français"],["en","English"],["it","Italiano"],["es","Español"],["pt-BR","Português (Brasil)"],["de","Deutsch"]];
-function pick(){var l=(navigator.language||"fr").toLowerCase();if(l.indexOf("pt")===0)return"pt-BR";var p=l.slice(0,2);return L[p]?p:"fr"}
-function set(l){
-  var d=L[l];document.documentElement.lang=l;
-  document.querySelectorAll("[data-t]").forEach(function(e){var v=d[e.getAttribute("data-t")];if(v!==undefined)e.textContent=v});
-  document.getElementById("budget").href=(l==="fr")?"budget.html":"budget-"+l+".html";
-  document.getElementById("store").href="https://apps.apple.com/"+S[l]+"/app/id6759218602";
-  document.getElementById("guide").href="guide.html#"+l;
-  document.getElementById("priv").href="privacy.html#"+l;
-  var f=document.getElementById("langs");f.innerHTML="";
-  N.forEach(function(n,i){var a=document.createElement("a");a.href="#";a.textContent=n[1];if(n[0]===l)a.setAttribute("aria-current","true");
-    a.onclick=function(e){e.preventDefault();set(n[0])};f.appendChild(a);if(i<N.length-1)f.appendChild(document.createTextNode("·"))});
-}
-set(pick());
-})();
-</script>
+    <section id="carte">
+      <div class="split rev">
+        <img class="phone" loading="lazy" src="/img/08-carte.webp" width="520" height="1130" alt="La carte d&#x27;un voyage au Japon : les dépenses regroupées par lieu, reliées par le parcours">
+        <div>
+          <p class="eyebrow">Carte et lieux</p>
+          <h2>Votre voyage, tel que vous l&#x27;avez vécu.</h2>
+          <p class="sub">Avec votre autorisation, Muskadia peut géolocaliser vos dépenses. Vous obtenez une carte aussi précise que possible de votre voyage : non seulement les endroits où vous avez dépensé de l&#x27;argent, mais aussi une idée de votre parcours et de tous les lieux visités.</p>
+          <ul class="ticks">
+            <li>Ajoutez un lieu à chaque dépense : votre position, un lieu récent, ou un nom tapé.</li>
+            <li>Les dépenses proches sont regroupées par lieu, et le parcours du voyage relie les étapes.</li>
+            <li>Votre position n&#x27;est lue que si vous la demandez. Si vous la refusez, tapez simplement le nom du lieu.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="fonctions">
+      <p class="eyebrow">Tout ce qu&#x27;il faut</p>
+      <h2>Pour voyager l&#x27;esprit tranquille, et tenir le budget au quotidien.</h2>
+      <div class="cards">
+        <div class="card"><h3>Voyager à deux</h3><p>Indiquez qui a payé et la part de chacun : Muskadia dit qui doit quoi à qui, sans tableur.</p></div>
+        <div class="card"><h3>Un budget par catégorie</h3><p>Budget du voyage et de chaque catégorie, avec une alerte à 80 % et à 100 %. Détaillez une catégorie en sous-catégories, par exemple Abonnements : Free, Cloud, ChatGPT.</p></div>
+        <div class="card h"><h3>La Maison</h3><p>Le quotidien aussi : budget du mois, recettes, solde, et une vue de l&#x27;année construite catégorie par catégorie.</p></div>
+        <div class="card"><h3>Carte et lieux</h3><p>Avec votre autorisation, géolocalisez vos dépenses : la carte montre où vous avez dépensé, et le parcours de votre voyage.</p></div>
+        <div class="card"><h3>Statistiques</h3><p>Total, moyenne par jour, répartition par catégorie, par personne et par mode de paiement.</p></div>
+        <div class="card"><h3>Six langues</h3><p>Français, anglais, italien, espagnol, portugais (Brésil) et allemand, avec mode sombre et grandes tailles de texte.</p></div>
+      </div>
+      <div class="strip" role="group" aria-label="Captures d&#x27;écran">
+        <figure><img class="phone" loading="lazy" src="/img/04-preparer-mois.webp" width="520" height="1130" alt="Préparer un mois : le budget détaillé par catégorie et sous-catégorie"><figcaption>Préparer un mois<span>Le budget, catégorie par catégorie.</span></figcaption></figure>
+        <figure><img class="phone" loading="lazy" src="/img/06-budget-voyage.webp" width="520" height="1130" alt="Le budget d&#x27;un voyage avec une catégorie dépliée en sous-catégories"><figcaption>Budget du voyage<span>Le prévu, le réel et les alertes.</span></figcaption></figure>
+        <figure><img class="phone" loading="lazy" src="/img/09-statistiques.webp" width="520" height="1130" alt="Les statistiques d&#x27;un voyage à deux : total, qui doit quoi, répartition par catégorie"><figcaption>Statistiques<span>Qui doit quoi, et où va l&#x27;argent.</span></figcaption></figure>
+        <figure><img class="phone" loading="lazy" src="/img/10-annee-par-categories.webp" width="520" height="1130" alt="Préparer son année : la carte pour construire le budget par catégories"><figcaption>Toute l&#x27;année<span>Un budget construit par catégories.</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section id="donnees">
+      <p class="eyebrow">Confidentialité</p>
+      <h2>Vos données restent chez vous.</h2>
+      <ul class="ticks">
+            <li>Pas de compte à créer, pas de publicité, pas de suivi.</li>
+            <li>Vos dépenses, vos photos de reçus et vos réglages restent sur votre téléphone.</li>
+            <li>Verrouillage par Face ID, Touch ID ou code.</li>
+            <li>Export tableur (CSV) et sauvegarde complète, restauration en un geste.</li>
+            <li>Vous venez de Vithey ? Vos voyages sont retrouvés.</li>
+      </ul>
+      <p class="sub"><a href="/privacy.html#fr">Lire la politique de confidentialité</a></p>
+      <div class="offer"><p><strong>L'offre.</strong> Votre premier voyage est offert, avec toutes ses fonctions, et la Maison est gratuite. Pour ouvrir d'autres voyages : un achat unique, sans abonnement. Le prix est celui de l'App Store.</p></div>
+    </section>
+
+    <section id="faq">
+      <p class="eyebrow">Questions fréquentes</p>
+      <h2>Ce qu&#x27;on nous demande souvent.</h2>
+      <div class="faq">
+        <details><summary>Qu&#x27;est-ce que Muskadia ?</summary><p>Une application iPhone pour noter ses dépenses de voyage dans la devise du pays et suivre le budget du quotidien, dans un espace appelé la Maison. Elle s&#x27;appelait Vithey jusqu&#x27;au 22 octobre 2026.</p></details>
+        <details><summary>Faut-il créer un compte ?</summary><p>Non. Il n&#x27;y a ni compte ni serveur qui reçoit vos dépenses : tout est enregistré sur votre iPhone.</p></details>
+        <details><summary>Ça marche sans connexion ?</summary><p>Oui. Sans réseau, la dépense est notée et convertie dès que la connexion revient.</p></details>
+        <details><summary>Peut-on partager les dépenses à deux ?</summary><p>Oui. Pour chaque dépense, on indique qui a payé et la part de chacun, et Muskadia calcule qui doit quoi à qui.</p></details>
+        <details><summary>Muskadia utilise-t-elle ma position ?</summary><p>Seulement avec votre autorisation, et seulement quand vous la demandez pour une dépense. Elle sert à placer la dépense sur la carte et à dessiner le parcours de votre voyage. Si vous la refusez, tapez simplement le nom du lieu : l&#x27;application reste utilisable.</p></details>
+        <details><summary>Mes données sont-elles envoyées quelque part ?</summary><p>Vos dépenses restent sur votre téléphone. L&#x27;application télécharge seulement une liste de taux de change, sans rien envoyer de vos données. Il n&#x27;y a ni publicité ni outil de suivi.</p></details>
+        <details><summary>Est-ce gratuit ?</summary><p>Le premier voyage est offert avec toutes ses fonctions, et la Maison est gratuite. Pour ouvrir d&#x27;autres voyages, il y a un achat unique, sans abonnement. Le prix est celui affiché par l&#x27;App Store.</p></details>
+        <details><summary>En quelles langues ?</summary><p>En français, anglais, italien, espagnol, portugais (Brésil) et allemand.</p></details>
+        <details><summary>Je venais de Vithey : retrouve-je mes voyages ?</summary><p>Oui. Vithey est devenue Muskadia : c&#x27;est la même application, et vos voyages sont repris.</p></details>
+        <details><summary>Comment récupérer mes données ?</summary><p>Dans les réglages, l&#x27;export produit un tableur (CSV) et la sauvegarde complète peut être restaurée en un geste.</p></details>
+      </div>
+    </section>
+
+    <div class="last">
+      <h2>Notez votre prochaine dépense en deux gestes.</h2>
+      <div class="cta" style="justify-content:center"><a class="store" href="https://apps.apple.com/fr/app/muskadia/id6759218602">Télécharger sur l&#x27;App Store</a></div>
+    </div>
+  </main>
+
+  <footer>
+    <nav aria-label="Pied de page">
+      <a href="/support.html">Support et contact</a> ·
+      <a href="/guide.html#fr">Guide d&#x27;utilisation</a> ·
+      <a href="/budget.html">Le budget en images</a> ·
+      <a href="/privacy.html#fr">Confidentialité</a>
+    </nav>
+    <p class="langs"><a href="/" hreflang="fr" lang="fr" aria-current="true">Français</a> · <a href="/en/" hreflang="en" lang="en">English</a> · <a href="/it/" hreflang="it" lang="it">Italiano</a> · <a href="/es/" hreflang="es" lang="es">Español</a> · <a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a> · <a href="/de/" hreflang="de" lang="de">Deutsch</a></p>
+    <p>© 2026 Muskadia · Disponible sur iPhone</p>
+  </footer>
+</div>
 </body>
 </html>
