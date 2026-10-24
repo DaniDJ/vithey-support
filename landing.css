@@ -1,0 +1,103 @@
+:root{
+  --paper:#F8F5EE;--page:#FFFDF8;--line:#E6DFCF;--ink:#1C2438;--ink2:#5C6578;
+  --amber:#F5A524;--amber-t:#8A5200;--amber-bg:#FDEFD0;
+  --teal:#1E9E86;--teal-t:#0F6B5A;--teal-bg:#D9F0EA;
+  --shadow:0 1px 2px rgba(28,36,56,.06),0 14px 36px rgba(28,36,56,.12);
+}
+:root[data-theme=dark]{
+  --paper:#12151F;--page:#1B2030;--line:#2A3045;--ink:#F2EFE6;--ink2:#A3A9B8;
+  --amber:#F7B23E;--amber-t:#F7B23E;--amber-bg:#3A2D12;
+  --teal:#3DC4A9;--teal-t:#5FD6BE;--teal-bg:#12342E;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 14px 36px rgba(0,0,0,.45);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --paper:#12151F;--page:#1B2030;--line:#2A3045;--ink:#F2EFE6;--ink2:#A3A9B8;
+  --amber:#F7B23E;--amber-t:#F7B23E;--amber-bg:#3A2D12;
+  --teal:#3DC4A9;--teal-t:#5FD6BE;--teal-bg:#12342E;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 14px 36px rgba(0,0,0,.45);
+}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  background-image:radial-gradient(70rem 30rem at 50% -10rem,var(--amber-bg),transparent 70%);background-repeat:no-repeat}
+a{color:var(--amber-t)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:6px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;margin:0}
+section{padding:4.5rem 0 0}
+section h2{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.1;letter-spacing:-.02em;font-weight:700;max-width:34rem}
+.eyebrow{margin:0 0 .6rem;font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--amber-t)}
+.sub{color:var(--ink2);max-width:38rem;margin:.8rem 0 0}
+
+/* En-tête */
+.top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem 0;margin-right:5.5rem}
+.brand{display:flex;align-items:center;gap:.65rem;text-decoration:none;color:var(--ink);font:700 1.3rem/1 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+.brand img{width:38px;height:38px;border-radius:10px;box-shadow:var(--shadow)}
+.nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.95rem}
+.nav a{color:var(--ink2);text-decoration:none}
+.nav a:hover{color:var(--ink);text-decoration:underline}
+@media(max-width:44rem){.nav{display:none}}
+
+/* Hero */
+.hero{display:grid;gap:2.5rem;align-items:center;padding:2.5rem 0 0}
+@media(min-width:56rem){.hero{grid-template-columns:1.05fr .95fr;padding-top:3.5rem}}
+h1{font-size:clamp(2.4rem,6vw,3.9rem);line-height:1.04;letter-spacing:-.025em;font-weight:700}
+.lead{font-size:1.2rem;color:var(--ink2);max-width:34rem;margin:1.2rem 0 0}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center;margin-top:1.8rem}
+.store{display:inline-block;padding:.85rem 1.6rem;border-radius:14px;background:var(--amber);color:#1C2438;font-weight:700;text-decoration:none;box-shadow:var(--shadow)}
+.store:hover{filter:brightness(1.05)}
+.ghost{color:var(--ink);font-weight:600;text-underline-offset:.2em}
+.pills{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.5rem}
+.pill{display:inline-flex;align-items:center;gap:.4rem;padding:.3rem .8rem;border-radius:999px;font-size:.9rem;font-weight:600}
+.pill i{width:.55rem;height:.55rem;border-radius:50%;display:inline-block}
+.pill.trip{background:var(--amber-bg);color:var(--amber-t)}.pill.trip i{background:var(--amber)}
+.pill.home{background:var(--teal-bg);color:var(--teal-t)}.pill.home i{background:var(--teal)}
+.former{margin:.9rem 0 0;font-style:italic;color:var(--ink2);font-size:.95rem}
+.phones{position:relative;display:flex;justify-content:center;gap:1rem;align-items:flex-start}
+.phone{display:block;width:100%;height:auto;border-radius:30px;box-shadow:var(--shadow);border:1px solid var(--line);background:var(--page)}
+.phones .phone{max-width:15rem;flex:1 1 0;min-width:0}
+.phones .phone+.phone{margin-top:3rem}
+@media(max-width:30rem){.phones .phone{max-width:46%}}
+
+/* Fonctions */
+.cards{display:grid;gap:1rem;margin-top:2.2rem}
+@media(min-width:40rem){.cards{grid-template-columns:1fr 1fr}}
+@media(min-width:62rem){.cards{grid-template-columns:1fr 1fr 1fr}}
+.card{padding:1.35rem 1.35rem 1.3rem;border-radius:18px;background:var(--page);border:1px solid var(--line);box-shadow:var(--shadow);position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c,var(--amber))}
+.card.h{--c:var(--teal)}
+.card h3{font-size:1.2rem;line-height:1.25;margin-bottom:.35rem}
+.card p{margin:0;color:var(--ink2);font-size:.97rem}
+
+/* Écrans */
+.split{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:52rem){.split{grid-template-columns:.9fr 1.1fr}.split.rev{grid-template-columns:1.1fr .9fr}}
+.split .phone{max-width:17rem;margin:0 auto}
+.strip{display:flex;gap:1.2rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:1.5rem .4rem 1.8rem;margin:1.4rem -.4rem 0}
+.strip figure{margin:0;flex:0 0 min(15rem,72vw);scroll-snap-align:start}
+.strip figcaption{margin-top:.8rem;font-weight:600;font-size:.95rem}
+.strip figcaption span{display:block;font-weight:400;color:var(--ink2);font-size:.9rem}
+
+/* Listes */
+.ticks{list-style:none;margin:1.4rem 0 0;padding:0;display:grid;gap:.7rem;max-width:36rem}
+.ticks li{position:relative;padding-left:1.8rem}
+.ticks li:before{content:"";position:absolute;left:0;top:.55em;width:.8rem;height:.8rem;border-radius:50%;background:var(--teal)}
+.offer{margin-top:1.6rem;padding:1.4rem 1.5rem;border-radius:18px;background:var(--amber-bg);color:var(--ink);max-width:38rem;border:1px solid var(--line)}
+.offer p{margin:0}
+
+/* FAQ */
+.faq{margin-top:2rem;max-width:44rem;display:grid;gap:.7rem}
+.faq details{border:1px solid var(--line);border-radius:14px;background:var(--page);padding:.2rem 1.1rem}
+.faq summary{cursor:pointer;font-weight:700;padding:.85rem 0;list-style-position:outside}
+.faq summary::marker{color:var(--amber-t)}
+.faq details p{margin:0 0 1rem;color:var(--ink2)}
+
+/* Pied de page */
+.last{margin-top:4.5rem;padding:2.2rem 1.4rem;border-radius:22px;background:var(--page);border:1px solid var(--line);box-shadow:var(--shadow);text-align:center}
+.last h2{margin:0 auto;font-size:clamp(1.6rem,3.6vw,2.2rem)}
+footer{margin:2.5rem 0 0;padding:1.6rem 0 3rem;border-top:2px dashed var(--line);text-align:center;font-size:.92rem;color:var(--ink2)}
+footer a{color:var(--ink2);text-decoration:none;padding:0 .45rem}
+footer a:hover{color:var(--ink);text-decoration:underline}
+
+.langs{margin:.9rem 0 0;font-size:.9rem}
+.langs a[aria-current=true]{color:var(--ink);font-weight:700;text-decoration:underline}

@@ -1,0 +1,26 @@
+# Muskadia
+
+> Muskadia est une application iPhone pour noter ses dépenses de voyage dans la devise du pays et suivre le budget du quotidien. Elle fonctionne sans compte, sans publicité et sans suivi : les données restent sur le téléphone. Elle s'appelait Vithey jusqu'au 22 octobre 2026.
+> Muskadia is an iPhone app to log travel expenses in the local currency and track the everyday budget. It works with no account, no ads and no tracking: data stays on the phone. It was called Vithey until 22 October 2026.
+
+Faits utiles / Key facts:
+- Plateforme / Platform: iPhone (App Store). Six langues / six languages: français, English, italiano, español, português (Brasil), Deutsch.
+- Voyages / Trips: devise du pays convertie au taux du jour, même sans connexion ; partage des dépenses à deux (qui a payé, part de chacun, qui doit quoi) ; budget par catégorie avec sous-catégories et alertes à 80 % et 100 % ; géolocalisation des dépenses avec l'autorisation de l'utilisateur (carte des lieux et parcours du voyage) ; photos de reçus ; statistiques.
+- La Maison / The Home: budget du mois, recettes, solde et vue de l'année, catégorie par catégorie.
+- Données / Data: export tableur (CSV), sauvegarde complète, verrouillage Face ID / Touch ID / code.
+- Offre / Offer: premier voyage offert, Maison gratuite, achat unique sans abonnement pour d'autres voyages ; le prix est celui de l'App Store / first trip free, Home free, one-time purchase (no subscription) for more trips; the price is the one shown on the App Store.
+
+## Pages
+- [Accueil (français)](https://muskadia.fr/)
+- [Home (English)](https://muskadia.fr/en/)
+- [Home (Italiano)](https://muskadia.fr/it/)
+- [Inicio (Español)](https://muskadia.fr/es/)
+- [Início (Português)](https://muskadia.fr/pt-br/)
+- [Startseite (Deutsch)](https://muskadia.fr/de/)
+- [Guide d'utilisation / User guide](https://muskadia.fr/guide.html)
+- [Le budget en images / Budget in pictures](https://muskadia.fr/budget.html)
+- [Politique de confidentialité / Privacy policy](https://muskadia.fr/privacy.html)
+- [Support et contact / Support and contact](https://muskadia.fr/support.html)
+
+## App Store
+- [Muskadia sur l'App Store](https://apps.apple.com/fr/app/muskadia/id6759218602)
