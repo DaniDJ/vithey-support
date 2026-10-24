@@ -66,3 +66,7 @@ svg text{font-family:var(--sans)}
 .lang-fixed li a:hover,.lang-fixed li a:focus-visible{background:rgba(128,128,128,.18)}
 .lang-fixed li a[aria-current=true]{font-weight:700}
 @media print{.lang-fixed{display:none}}
+
+/* Même hauteur pour le bouton de mode et le sélecteur de langue (alignés sur la ligne de tête) */
+.mode-toggle{height:2.1rem;box-sizing:border-box;display:inline-flex;align-items:center}
+.lang-fixed summary{height:2.1rem;box-sizing:border-box}

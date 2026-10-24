@@ -114,3 +114,7 @@ footer a:hover{color:var(--ink);text-decoration:underline}
 .lang li a:hover,.lang li a:focus-visible{background:var(--paper);color:var(--ink)}
 .lang li a[aria-current=true]{color:var(--ink);font-weight:700}
 @media(max-width:30rem){.top{margin-right:6.4rem;gap:.5rem}.brand{font-size:1.15rem;gap:.5rem}.brand img{width:32px;height:32px}.lang summary{padding:.35rem .6rem}}
+
+/* Ligne de tête de hauteur fixe : le bouton de mode (fixe) se centre sur la même ligne que l'icône, le titre et le sélecteur */
+.top{min-height:calc(38px + 2.2rem);box-sizing:border-box}
+body .mode-toggle{top:calc(1.1rem + 19px - 1.05rem)}
