@@ -7,6 +7,7 @@ Faits utiles / Key facts:
 - Plateforme / Platform: iPhone (App Store). Six langues / six languages: français, English, italiano, español, português (Brasil), Deutsch.
 - Voyages / Trips: devise du pays convertie au taux du jour, même sans connexion ; partage des dépenses à deux (qui a payé, part de chacun, qui doit quoi) ; budget par catégorie avec sous-catégories et alertes à 80 % et 100 % ; géolocalisation des dépenses avec l'autorisation de l'utilisateur (carte des lieux et parcours du voyage) ; photos de reçus ; statistiques.
 - La Maison / The Home: budget du mois, recettes, solde et vue de l'année, catégorie par catégorie.
+- Widget (version 2.3) : widget « Saisie rapide » (écran d'accueil petit et moyen, écran verrouillé) qui ouvre la saisie d'une dépense en un toucher, dans la Maison ou dans le dernier voyage ; il ne lit ni n'envoie aucune donnée / "Quick add" widget (Home Screen small and medium, Lock Screen) that opens the new-expense screen in one tap, in Home or in the last trip; it reads and sends no data.
 - Données / Data: export tableur (CSV), sauvegarde complète, verrouillage Face ID / Touch ID / code.
 - Offre / Offer: premier voyage offert, Maison gratuite, achat unique sans abonnement pour d'autres voyages ; le prix est celui de l'App Store / first trip free, Home free, one-time purchase (no subscription) for more trips; the price is the one shown on the App Store.
 
